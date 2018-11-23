@@ -1,2 +1,2 @@
-# e-s2-equipoAm
+# e-s2-sticker-fighters
 Sprint 2 - Awesome profile cards project

@@ -1,0 +1,29 @@
+body{
+  background-color: #f5f5f5;
+  margin:0;
+  padding:0;
+  &{
+  background: pink;
+  height:100vh;
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+.header_box{
+  background: yellow;
+  margin:0;
+  padding: 94px 0 0 0;
+  width: 250px;
+}
+
+.container_img-card{
+  width: 250px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

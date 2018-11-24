@@ -1,0 +1,23 @@
+.footer_box{
+  margin:0;
+  padding:0;
+}
+.footer_box-container{
+  width: 320px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_par{
+  margin: 0;
+  padding: 20px 0 10px;
+  @include Text-Style-8;
+}
+.footer_logo{
+  margin: 0;
+  padding: 0;
+  width: 103px;
+  height: 40px;
+}

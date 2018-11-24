@@ -1,18 +1,16 @@
 .hero_box{
-  background: lightsalmon;
   display: flex;
   flex-direction: column
 }
 .hero_title{
-  background: lightblue;
   margin: 0;
   padding: 35px 0 4px 0;
   width: 223px;
   height: 24px;
+  align-self:center;
   @include Text-Style-2;
 }
 .hero_text{
-  background: lightslategrey;
     width: 264.8px;
     height: 38.4px;
     @include Text-Style-3;
@@ -22,12 +20,13 @@
   padding: 0 ;
 }
 .hero_icons {
-  background-color: rgb(151, 247, 164);
   margin: 15px 0 39px 0;
   width: 268px;
   height: 74px;
+  
 }
 .hero_icons-list{
+  border-radius: 5px solid orange;
   padding: 0 20px;
   list-style: none;
   display:grid;

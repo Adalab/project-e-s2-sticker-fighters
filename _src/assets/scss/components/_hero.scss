@@ -1,6 +1,7 @@
 .hero_box{
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  align-items:center;
 }
 .hero_title{
   margin: 0;
@@ -11,9 +12,10 @@
   @include Text-Style-2;
 }
 .hero_text{
-    width: 264.8px;
-    height: 38.4px;
-    @include Text-Style-3;
+  align-self:center;
+  width: 264.8px;
+  height: 38.4px;
+  @include Text-Style-3;
 }
 .hero_text-style{
   margin: 0;
@@ -23,10 +25,10 @@
   margin: 15px 0 39px 0;
   width: 268px;
   height: 74px;
-  
+  border: 2px solid $dull-orange;
+ 
 }
 .hero_icons-list{
-  border-radius: 5px solid orange;
   padding: 0 20px;
   list-style: none;
   display:grid;
@@ -52,8 +54,7 @@
 }
 .btn-style{
   background-color:#438792;
-  margin-bottom: 30px;
-  border-radius: 21px;
+  margin-bottom: 30px;;
   align-self: center;
   @include Text-Style-5;
 }

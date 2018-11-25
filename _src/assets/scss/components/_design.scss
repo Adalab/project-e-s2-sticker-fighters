@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu');
+
+//DESIGN
+.design--colours {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 20px 0px 39px;
+}
+.design--colours_title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $gunmetal;
+    margin: 0px;
+}
+.design_input {
+    margin: 0px 4px 0px 0px;
+}
+.clase {
+    display: flex;
+    align-items: center;
+}
+.design--colours_label {
+    display: flex;
+    //background-color: red;
+}
+.label_item {
+    width: 30px;
+    height: 25px;
+}
+.item_green_1 {
+    background-color: $dark-green-blue;
+}
+.item_green_2 {
+    background-color: $dirty-blue; 
+}
+.item_green_3 {
+    background-color: $hospital-green;
+}
+.item_red_1 {
+    background-color: $dried-blood;
+}
+.item_red_2 {
+    background-color: $rusty-red; 
+}
+.item_red_3 {
+    background-color: $tomato;
+}
+.item_blue_1 {
+    background-color: $slate;
+}
+.item_blue_2 {
+    background-color: $pale-grey-twoo; 
+}
+.item_blue_3 {
+    background-color: $light-grey-blue;
+}

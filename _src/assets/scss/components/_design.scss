@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu');
 
 //DESIGN
-.design--colours {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.design--colours, .design--fonts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 25px 20px 0px 39px;
+}
+.design--fonts {
+    padding-top: 13px;
 }
 .design--colours_title {
     font-family: 'Open Sans', sans-serif;
@@ -20,10 +22,10 @@
 .clase {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 .design--colours_label {
     display: flex;
-    //background-color: red;
 }
 .label_item {
     width: 30px;
@@ -55,4 +57,21 @@
 }
 .item_blue_3 {
     background-color: $light-grey-blue;
+}
+
+.fonts {
+    margin-bottom: 9px;
+}
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+
+}
+.comic {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 16px;
 }

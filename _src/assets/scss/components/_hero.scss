@@ -10,12 +10,22 @@
   height: 24px;
   align-self:center;
   @include Text-Style-2;
+    @media all and(min-width:768px){
+      width: 278px;
+      height: 31px;
+      font-size: 24px;
+  }
 }
 .hero_text{
   align-self:center;
   width: 264.8px;
   height: 38.4px;
   @include Text-Style-3;
+    @media all and(min-width:768px){
+      width: 331px;
+      height: 48px;
+      font-size: 16px;
+  }
 }
 .hero_text-style{
   margin: 0;
@@ -23,17 +33,23 @@
 }
 .hero_icons {
   margin: 15px 0 39px 0;
-  width: 268px;
   height: 74px;
-  border: 2px solid $dull-orange;
- 
+  width: 268px;
+  border: 2px solid rgba(231, 142, 86, 0.21);
+    @media all and(min-width:768px){
+      width: 325px;
+      height: 86px;
+      margin: 21px 0 186px 0;
+      border: 5px solid rgba(231, 142, 86, 0.21);
+  }
 }
 .hero_icons-list{
-  padding: 0 20px;
+  padding: 0;
   list-style: none;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
+  grid-gap: 35px;
   @include Text-Style-7;
 }
 .fas{
@@ -47,14 +63,17 @@
   @include Text-Style-4;
 }
 .hero_btn{
-    width: 129px;
-    height: 42px;
-    border-radius: 21px;
-    background-color: $dirty-blue;
+  width: 129px;
+  height: 42px;
+  border-radius: 21px;
+  margin-bottom: 30px;
+  background-color: $dirty-blue;
+    @media all and(min-width:768px){
+      margin-bottom: 59px;
+  }
 }
 .btn-style{
   background-color:#438792;
-  margin-bottom: 30px;;
   align-self: center;
   @include Text-Style-5;
 }

@@ -2,17 +2,27 @@ body{
   background-color: #f5f5f5;
   margin:0;
   padding:0;
+}
+.page_wrapper{
+  margin:0;
+  padding:0;
   height: 100vh;
 }
-
 .header_box{
   text-align: center;
   margin:0;
   padding: 94px 0 0 0;
+  @media all and(min-width:768px){
+    padding: 348px 0 0 0;
+}
 }
 .container_img-card{
   width: 250px;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
+    @media all and(min-width:768px){
+      width: 419px;
+      height: 107px;
+  }
 }

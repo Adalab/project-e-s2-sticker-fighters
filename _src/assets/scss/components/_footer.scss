@@ -2,10 +2,11 @@
   margin:0;
   padding:0;
   height: 110px;
-  width: 100vw;
   background-color: $white;
-  
   @include Text-Style-8;
+    @media all and(min-width:768px){
+      height: 60px;
+  }
 }
 .footer_box-container{
   display: flex;
@@ -15,13 +16,24 @@
   margin:0;
   padding: 0;
   min-width: 100%;
+  @media all and(min-width:768px){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .footer_par{
   margin: 0;
   padding: 20px 0 10px;
+  @media all and(min-width:768px){
+    padding: 20px 41px;
+  }
 }
 .footer_logo{
   margin: 0;
   padding: 0;
   height: 40px;
+  @media all and(min-width:768px){
+    padding: 10px 41px;
+  }
 }

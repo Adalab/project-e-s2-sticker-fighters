@@ -24,7 +24,7 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 
 .card {
     width: 100%;
-    height: 460px; //unidades realtivas??
+    height: 460px; 
     padding-top: 60px;
     background: linear-gradient($silver, $pale-grey);
 
@@ -32,6 +32,8 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 
 
 .card__wrapper {
+
+    postion: relative;
     width: 240px;
     margin: 0 auto;
     padding-top: 20px;
@@ -102,7 +104,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 //Icon list
 .card__contact-list {
     padding: 10px 0 10px 0;
-    background-color: red;
 }
 
 .contact-list__element {
@@ -112,9 +113,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     box-sizing: border-box;
     border: 2px solid $hospital-green;
     border-radius: 16px;
-    
-    //background-color: blue;
-
 }
 
 
@@ -137,13 +135,11 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 .card__skills-list {
     padding: 10px 0 10px 0;
     border-top: 2px solid rgba(67, 135, 146, 0.2);
-    //background-color: aqua;
 }
 
 .skills-list__element {
     margin-left: 15px;
-    padding: 2px 5px;
-    
+    padding: 1px 5px;
     text-transform: uppercase;
     font-family: $skills-font, sans-serif;
     font-size: 13px;
@@ -154,4 +150,28 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 
 .element__content {
     margin: 0;
+}
+
+// RESET BUTTON
+
+.card__button {
+    
+    width: 75px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid $white;
+    border-radius: 15px;
+    background-color: transparent;
+    color: $gun-metal;
+    font-family: $skills-font;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 20px;
+
+
+    //background-image: url(../images/garbage.svg) center left no-repeat;
+
+    position: absolute;
+    bottom: 89%;
+    
 }

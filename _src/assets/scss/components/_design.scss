@@ -1,10 +1,38 @@
+body {
+    margin: 0;
+}
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu');
 
 //DESIGN
+.design {
+    padding: 27px 20px 10px;
+}
+.design--section {
+    border-bottom: 1px solid #d8d8d8;
+}
+.form--btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+    background: white;
+    border: 0px;
+}
+.form--btn_title {
+    display: flex;
+    align-items: center;
+}
+.design--title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+}
 .design--colours, .design--fonts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 25px 20px 0px 39px;
+    padding: 25px 0px 0px 19px;
 }
 .design--fonts {
     padding-top: 13px;
@@ -21,6 +49,7 @@
 }
 .clase {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -58,20 +87,25 @@
 .item_blue_3 {
     background-color: $light-grey-blue;
 }
-
 .fonts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     margin-bottom: 9px;
 }
 .montserrat {
+    width: 90px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
 }
 .ubuntu {
+    width: 90px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-
 }
 .comic {
+    width: 90px;
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 16px;
+    font-size: 16px; 
+    //¿?¿? No está perfectamente alineado
 }

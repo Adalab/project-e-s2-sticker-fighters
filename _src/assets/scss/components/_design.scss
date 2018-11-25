@@ -1,23 +1,48 @@
 body {
     margin: 0;
 }
+
+$white-three: #f5f5f5;
+$azure: #00a0f5;
+
+$color-white: #f3f4f5;
+
+$dark-green-blue: #114e4e;
+$dirty-blue: #438792;
+$hospital-green: #a2deaf;
+
+$dried-blood: #420101;
+$rusty-red: #bd1010;
+$tomato: #e95626;
+
+$slate: #3e5b65;
+$pale-grey-twoo: #dfe5eb;
+$light-grey-blue: #a0c0cf;
+
+$gunmetal: #54585a;
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu');
 
 //DESIGN
 .design {
-    padding: 27px 20px 10px;
+    border-bottom: 1px solid #d8d8d8;
+    margin: 27px 20px 0px;
+    color: $gunmetal;
 }
 .design--section {
-    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 21px;
 }
 .form--btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    padding-bottom: 10px;
     width: 100%;
     background: white;
     border: 0px;
+    font-size: 18px;
+    color: $gunmetal;
 }
 .form--btn_title {
     display: flex;
@@ -32,7 +57,7 @@ body {
 .design--colours, .design--fonts {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 25px 0px 0px 19px;
+    padding: 15px 0px 0px 19px;
 }
 .design--fonts {
     padding-top: 13px;
@@ -44,10 +69,41 @@ body {
     color: $gunmetal;
     margin: 0px;
 }
+/*start radio buttons*/
 .design_input {
-    margin: 0px 4px 0px 0px;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: $white-three;
+     height: 17px;
+     width: 17px;
+    margin: 0px 10px 0px 0px;
+     border-radius: 50px;
+     cursor: pointer;     
+     outline: none;
+     box-shadow: inset 1px 1px 2px 1px rgba(68, 68, 68, .2);
 }
+.design_input:checked::before
+{
+     position: absolute;
+     content: ' ';
+     left: 3px;
+     top: 3px;
+     height: 6px;
+     width: 6px;
+     border-radius: 50px;
+     background-color: $white-three;
+     transform: translate(50%, 50%);
+}
+.design_input:checked {
+    box-shadow: none;
+     background-color: $azure;
+}
+/* end radio buttons*/
 .clase {
+    position:relative;
     display: flex;
     justify-content: flex-end;
     align-items: center;

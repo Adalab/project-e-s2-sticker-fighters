@@ -4,11 +4,16 @@
 $silver: #bfcdd0;
 $pale-grey: #dde9ed;
 
+    //color del fondo de la tarjeta
+$white: #fff;
+
     // color del borde de los titulos
 $hospital-green: #a2deaf; 
 
     //fuentes
 $titles-font:'Dosis';
+$dark-green-blue: #114e4e; //$title-name-color:
+$gun-metal:#54585a; //$title-profession-color
 
 
 
@@ -16,6 +21,7 @@ $titles-font:'Dosis';
 .card {
     width: 100vw;
     height: 460px; //unidades realtivas??
+    padding-top: 60px;
     background: linear-gradient($silver, $pale-grey);
 
 }
@@ -25,13 +31,56 @@ $titles-font:'Dosis';
     width: 240px;
     height: 367px;
     margin: 0 auto;
-    background-color: red;
+    padding-top: 20px;
+    background-color:$white;
 }
+
+
+
+// CARD TITLES
 
 .card__titles {
     text-transform: capitalize;
     border-left: 5px solid $hospital-green;
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
+    padding-left: 15px; //20-5(ancho del borde)
     font-family: $titles-font, sans-serif;
+   
+}
+
+.title__name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    color: $dark-green-blue;
+}
+
+.title__profession {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $gun-metal;
+
 }
 
 
+// CARD IMAGE
+
+.card__image {
+    width: 240px;
+    height: 200px;
+    background-image: url(../images/cat.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.image__photo {
+    width: 0;
+    height: 0;
+    display: none; // ocultamos la imagen para que el lector de pantallas lea que hay una imagen, pero se vea la imagen del contendor 
+}

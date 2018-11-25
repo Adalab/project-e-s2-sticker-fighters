@@ -117,18 +117,57 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 
 
 .element__link {
-    width: 32px;
-    height: 32px;
-    background-color: purple;
+    width: 28px; //32-4 (de los bordes del li)
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    //background-color: purple;
 }
 
 .element__icon {
 
-    width: 17px;
+    width: 18px;
     height: 18px;
-    background-color: green;
-    // background: url(../icons/mobile.svg) center left no-repeat;
+    display: inline-block;
+    background-position: center;
+
 }
+
+.phone {   
+background: url(../images/mobile.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.mail {
+
+    background: url(../images/mail.svg);
+    background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+
+.linkedin {
+    background: url(../images/linkedin.svg);
+    background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+.github {
+    background: url(../images/github.svg);
+    background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+
+
 
 //Skill list
 
@@ -167,11 +206,21 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     font-size: 12px;
     text-transform: uppercase;
     line-height: 20px;
-
-
-    //background-image: url(../images/garbage.svg) center left no-repeat;
-
     position: absolute;
     bottom: 89%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     
 }
+
+.button__icon {
+
+    width: 11px;
+    height: 13px;
+    background: url(../images/garbage.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

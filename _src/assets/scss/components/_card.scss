@@ -12,14 +12,18 @@ $hospital-green: #a2deaf;
 
     //fuentes
 $titles-font:'Dosis';
+$skills-font: 'Open Sans';
 $dark-green-blue: #114e4e; //$title-name-color:
 $gun-metal:#54585a; //$title-profession-color
+
+    //skill list
+$dirty-blue: #438792; //color de fondo de los li de la lista
 
 
 
 
 .card {
-    width: 100vw;
+    width: 100%;
     height: 460px; //unidades realtivas??
     padding-top: 60px;
     background: linear-gradient($silver, $pale-grey);
@@ -29,7 +33,6 @@ $gun-metal:#54585a; //$title-profession-color
 
 .card__wrapper {
     width: 240px;
-    height: 367px;
     margin: 0 auto;
     padding-top: 20px;
     background-color:$white;
@@ -86,17 +89,20 @@ $gun-metal:#54585a; //$title-profession-color
 }
 
 
-// Icons list
+// lists
 
-.card__contact-list {
+.card__list {
 
     list-style: none;
-    padding: 10px 0 10px 0;
     margin: 0;
     display: flex;
+    
+}
+
+//Icon list
+.card__contact-list {
+    padding: 10px 0 10px 0;
     background-color: red;
-    
-    
 }
 
 .contact-list__element {
@@ -124,4 +130,28 @@ $gun-metal:#54585a; //$title-profession-color
     height: 18px;
     background-color: green;
     // background: url(../icons/mobile.svg) center left no-repeat;
+}
+
+//Skill list
+
+.card__skills-list {
+    padding: 10px 0 10px 0;
+    border-top: 2px solid rgba(67, 135, 146, 0.2);
+    //background-color: aqua;
+}
+
+.skills-list__element {
+    margin-left: 15px;
+    padding: 2px 5px;
+    
+    text-transform: uppercase;
+    font-family: $skills-font, sans-serif;
+    font-size: 13px;
+    color: $white;
+    border-radius: 4px;
+    background-color: $dirty-blue;
+}
+
+.element__content {
+    margin: 0;
 }

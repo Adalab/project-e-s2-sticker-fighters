@@ -124,15 +124,21 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     align-items: center;
     
     //background-color: purple;
+    text-decoration: none;
 }
 
-.element__icon {
+// .element__icon {
 
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    background-position: center;
+//     width: 18px;
+//     height: 18px;
+//     display: inline-block;
+//     background-position: center;
 
+// }
+
+.fab {
+    color: $dark-green-blue;
+    
 }
 
 .phone {   
@@ -141,30 +147,32 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-.mail {
+// .mail {
 
-    background: url(../images/mail.svg);
-    background-repeat: no-repeat;
-background-size: cover;
+//     background: url(../images/mail.svg);
+//     background-repeat: no-repeat;
+// background-size: cover;
 
-}
-
-
-.linkedin {
-    background: url(../images/linkedin.svg);
-    background-repeat: no-repeat;
-background-size: cover;
+// }
 
 
-}
-
-.github {
-    background: url(../images/github.svg);
-    background-repeat: no-repeat;
-background-size: cover;
 
 
-}
+// .linkedin {
+//     background: url(../images/linkedin.svg);
+//     background-repeat: no-repeat;
+// background-size: cover;
+
+
+// }
+
+// .github {
+//     background: url(../images/github.svg);
+//     background-repeat: no-repeat;
+// background-size: cover;
+
+
+// }
 
 
 

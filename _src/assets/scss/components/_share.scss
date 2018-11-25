@@ -1,23 +1,116 @@
 .share {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
+
 .share__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
-.share-action {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.share-btn {
 
+.share-action {
 }
+
+.share-btn {
+    width: 96px;
+    height: 24px;
+    font-family: $font-open;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $gunmetal;
+    border: none;
+    margin-bottom: 30px;
+    outline: none;
+}
+
 .share-title {
+    margin: 0;
+    padding-left: 51px;
+    color: $gunmetal;
+    font-size: 18px;
+}
+
+.create-btn {
+    width: 199px;
+    height: 50px;
+    text-transform: uppercase;
+    font-family: $font-open;
+    font-size: 18px;
+    color: $white;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $dull-orange;
+    border: none;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.create-btn:focus { 
+    background-color: #d5d5d5;
+}
+
+.rectangle {
+    width: 280px;
+    height: 1px;
+    background-color: $white-two;
+}
+
+.share-created {
+}
+
+.text-created {
+    // width: 219px;
+    // height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: $font-open;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
     color: $gunmetal;
 }
-.create-btn {}
-.share-created {}
-.text-created {}
-.link-created {}
-.share-twitter {}
+
+.link-created {
+    width: 292px;
+    height: 17px;
+    font-family: $font-open;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $dull-orange;
+}
+
+.share-twitter {
+    width: 181px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: $azure;
+    font-family: $font-open;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: $white;
+    border:none;
+    outline: none;
+}

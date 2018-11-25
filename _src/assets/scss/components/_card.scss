@@ -84,3 +84,44 @@ $gun-metal:#54585a; //$title-profession-color
     height: 0;
     display: none; // ocultamos la imagen para que el lector de pantallas lea que hay una imagen, pero se vea la imagen del contendor 
 }
+
+
+// Icons list
+
+.card__contact-list {
+
+    list-style: none;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    display: flex;
+    background-color: red;
+    
+    
+}
+
+.contact-list__element {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+    box-sizing: border-box;
+    border: 2px solid $hospital-green;
+    border-radius: 16px;
+    
+    //background-color: blue;
+
+}
+
+
+.element__link {
+    width: 32px;
+    height: 32px;
+    background-color: purple;
+}
+
+.element__icon {
+
+    width: 17px;
+    height: 18px;
+    background-color: green;
+    // background: url(../icons/mobile.svg) center left no-repeat;
+}

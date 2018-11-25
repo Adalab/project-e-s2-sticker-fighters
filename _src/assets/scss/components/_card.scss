@@ -109,10 +109,16 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 .contact-list__element {
     width: 32px;
     height: 32px;
-    margin-left: 20px;
+    margin-left: 10px;
     box-sizing: border-box;
     border: 2px solid $hospital-green;
     border-radius: 16px;
+}
+
+.contact-list__element:first-child {
+    
+    margin-left: 20px;
+    
 }
 
 
@@ -122,8 +128,8 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    //background-color: purple;
+    font-size: 18px;
+    color: $dark-green-blue;
     text-decoration: none;
 }
 
@@ -136,10 +142,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 
 // }
 
-.fab {
-    color: $dark-green-blue;
-    
-}
 
 .phone {   
 background: url(../images/mobile.svg);

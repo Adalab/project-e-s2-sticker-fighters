@@ -1,7 +1,6 @@
 .footer_box{
   margin:0;
   padding:0;
-  height: 110px;
   background-color: $white;
   @include Text-Style-8;
     @media all and(min-width:768px){
@@ -15,7 +14,6 @@
   align-items: center;
   margin:0;
   padding: 0;
-  min-width: 100%;
   @media all and(min-width:768px){
     display: flex;
     flex-direction: row;
@@ -31,7 +29,7 @@
 }
 .footer_logo{
   margin: 0;
-  padding: 0;
+  padding-bottom: 20px;
   height: 40px;
   @media all and(min-width:768px){
     padding: 10px 41px;

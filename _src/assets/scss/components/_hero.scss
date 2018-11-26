@@ -1,7 +1,23 @@
+
+.page_wrapper{
+  margin:0;
+  padding:0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .hero_box{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items:center;
+  flex-grow: 1;
+  margin-top:70px;
+  @media all and(min-width:768px){
+    margin-top:348px;
+    margin-bottom: 60px;
+  }
 }
 .hero_title{
   margin: 0;
@@ -33,13 +49,13 @@
 }
 .hero_icons {
   margin: 15px 0 39px 0;
-  height: 74px;
-  width: 268px;
-  border: 2px solid rgba(231, 142, 86, 0.21);
+  padding: 0 20px;
+  border: 1.6px solid rgba(231, 142, 86, 0.21);
+  border-radius: 4px;
+  box-sizing: border-box;
     @media all and(min-width:768px){
       width: 325px;
       height: 86px;
-      margin: 21px 0 186px 0;
       border: 5px solid rgba(231, 142, 86, 0.21);
   }
 }
@@ -49,16 +65,15 @@
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 35px;
   @include Text-Style-7;
 }
 .fas{
-  width: 32px;
+  width: 25px;
   height: 26px;
   @include Text-Style-4;
 }
 .far{
-  width: 32px;
+  width: 25px;
   height: 26px;
   @include Text-Style-4;
 }
@@ -66,14 +81,14 @@
   width: 129px;
   height: 42px;
   border-radius: 21px;
-  margin-bottom: 30px;
   background-color: $dirty-blue;
     @media all and(min-width:768px){
-      margin-bottom: 59px;
+      margin-top: 186px;
   }
 }
 .btn-style{
   background-color:#438792;
   align-self: center;
   @include Text-Style-5;
+  text-transform: uppercase;
 }

@@ -19,6 +19,8 @@ $slate: #3e5b65;
 $pale-grey-twoo: #dfe5eb;
 $light-grey-blue: #a0c0cf;
 
+
+$dull-orange: #e17334;
 $gunmetal: #54585a;
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu');
@@ -45,6 +47,9 @@ $gunmetal: #54585a;
     border: 0px;
     font-size: 18px;
     color: $gunmetal;
+}
+.form--btn_title > .far {
+    color: $dull-orange;
 }
 .form--btn_title {
     display: flex;
@@ -73,35 +78,34 @@ $gunmetal: #54585a;
 }
 /*start radio buttons*/
 .design_input {
-     -webkit-appearance: none;
-     -moz-appearance: none;
-     appearance: none;
-     display: inline-block;
-     position: relative;
-     background-color: $white-three;
-     height: 17px;
-     width: 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: $white-three;
+    height: 17px;
+    width: 17px;
     margin: 0px 10px 0px 0px;
-     border-radius: 50px;
-     cursor: pointer;     
-     outline: none;
-     box-shadow: inset 1px 1px 2px 1px rgba(68, 68, 68, .2);
+    border-radius: 50px;
+    cursor: pointer;     
+    outline: none;
+    box-shadow: inset 1px 1px 2px 1px rgba(68, 68, 68, .2);
 }
-.design_input:checked::before
-{
-     position: absolute;
-     content: ' ';
-     left: 3px;
-     top: 3px;
-     height: 6px;
-     width: 6px;
-     border-radius: 50px;
-     background-color: $white-three;
-     transform: translate(50%, 50%);
+.design_input:checked::before {
+    position: absolute;
+    content: ' ';
+    left: 3px;
+    top: 3px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    background-color: $white-three;
+    transform: translate(50%, 50%);
 }
 .design_input:checked {
     box-shadow: none;
-     background-color: $azure;
+    background-color: $azure;
 }
 /* end radio buttons*/
 .clase {

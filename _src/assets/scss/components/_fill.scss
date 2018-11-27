@@ -57,8 +57,20 @@
     flex-direction: column;
   }
   .search--btn{
-    display: none;
+    color:transparent;
+    // display: none;
   }
   .fill--checkbox__text{
     margin-top:40px;
+  }
+  .fill--input__img{
+    width: 29px;
+    height: 29px;
+    border: 1px solid #a2deaf;
+    margin-left: 20px;
+    margin-top: 6px;
+  }
+  .fill--wraper{
+    display:flex;
+    
   }

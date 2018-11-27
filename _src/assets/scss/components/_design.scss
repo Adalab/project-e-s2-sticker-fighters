@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+}
+
+$white-three: #f5f5f5;
+$azure: #00a0f5;
+
+$color-white: #f3f4f5;
+
+$dark-green-blue: #114e4e;
+$dirty-blue: #438792;
+$hospital-green: #a2deaf;
+
+$dried-blood: #420101;
+$rusty-red: #bd1010;
+$tomato: #e95626;
+
+$slate: #3e5b65;
+$pale-grey-twoo: #dfe5eb;
+$light-grey-blue: #a0c0cf;
+
+
+$dull-orange: #e17334;
+$gunmetal: #54585a;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu');
+//DESIGN
+.design {
+    border: 0px;
+    border-bottom: 1px solid #d8d8d8;
+    margin: 27px 0px 0px;
+    padding: 0px;
+    color: $gunmetal;
+}
+.design--section {
+    padding-bottom: 21px;
+}
+.form--btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    background: white; //cambiar degradado
+    border: 0px;
+    font-size: 18px;
+    color: $gunmetal;
+}
+.form--btn_title > .far {
+    color: $dull-orange;
+}
+.form--btn_title {
+    display: flex;
+    align-items: center;
+}
+.design--title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+}
+.design--colours, .design--fonts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 0px 0px 19px;
+}
+.design--fonts {
+    padding-top: 13px;
+}
+.design--colours_title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $gunmetal;
+    margin: 0px;
+}
+/*start radio buttons*/
+.design_input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    position: relative;
+    background-color: $white-three;
+    height: 17px;
+    width: 17px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 50px;
+    cursor: pointer;     
+    outline: none;
+    box-shadow: inset 1px 1px 2px 1px rgba(68, 68, 68, .2);
+}
+.design_input:checked::before {
+    position: absolute;
+    content: ' ';
+    left: 3px;
+    top: 3px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50px;
+    background-color: $white-three;
+    transform: translate(50%, 50%);
+}
+.design_input:checked {
+    box-shadow: none;
+    background-color: $azure;
+}
+/* end radio buttons*/
+.clase {
+    position:relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.design--colours_label {
+    display: flex;
+}
+.label_item {
+    width: 30px;
+    height: 25px;
+}
+.item_green_1 {
+    background-color: $dark-green-blue;
+}
+.item_green_2 {
+    background-color: $dirty-blue; 
+}
+.item_green_3 {
+    background-color: $hospital-green;
+}
+.item_red_1 {
+    background-color: $dried-blood;
+}
+.item_red_2 {
+    background-color: $rusty-red; 
+}
+.item_red_3 {
+    background-color: $tomato;
+}
+.item_blue_1 {
+    background-color: $slate;
+}
+.item_blue_2 {
+    background-color: $pale-grey-twoo; 
+}
+.item_blue_3 {
+    background-color: $light-grey-blue;
+}
+.fonts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 9px;
+}
+.montserrat {
+    width: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.ubuntu {
+    width: 90px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+.comic {
+    width: 90px;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 16px; 
+    //¿?¿? No está perfectamente alineado
+}

@@ -1,0 +1,64 @@
+.fill--page{
+    width: 320px;
+    color:#54585a;
+    font-family: OpenSans;  
+    font-size: 16px;
+    background-image: linear-gradient(to bottom, #f5f5f5, #ffffff);
+    border: none;
+  }
+  .fill--name{
+    display:flex;
+    justify-content: space-between;
+    // border-top: #54585a;
+  }
+   
+  .far-fa-keyboard{
+    width: 21px;
+    height: 18px;
+    font-family: FontAwesome5Pro;
+    font-size: 18px;
+    color: #e17334;
+  }
+  .far-fa-angle-down{
+    width: 16px;
+    height: 18px;
+    font-family: FontAwesome5Pro;
+    font-size: 18px;
+  }
+  .fill--content{
+    color: #114e4e;
+    line-height: 1.43;
+  }
+  .fill--form{
+    margin-bottom: 20px;
+    label{
+        display: block;
+    }
+    input{
+        border: 1px solid #a2deaf;
+        width: 281px;
+        height: 30px;
+        color: #c5c5c5;
+    }
+   }
+  .fill--btn{
+    width: 140px;
+    height: 30px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: #e17334;
+    border-style: none;
+    margin-bottom:20px;
+    color: white;
+    margin-top: 6px;
+  }
+  .fill--form__btn{
+    display: flex;
+    flex-direction: column;
+  }
+  .search--btn{
+    display: none;
+  }
+  .fill--checkbox__text{
+    margin-top:40px;
+  }

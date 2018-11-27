@@ -3,13 +3,11 @@
     margin: 0;
     padding: 0;
 }
-
 .share__wrapper {
     // display: flex;
     // align-items: center;
     border-bottom: 1px solid #d8d8d8; 
 }
-
 .share-btn {
     width: 100%;
     height: 24px;
@@ -24,17 +22,14 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .form--btn_title {
     display: flex;
     align-items: center;
 }
-
-.fa-share-alt  {
+.form--btn_title .fa-share-alt  {
     font-size: 18px;
     color: $dull-orange;
 }
-
 .share-title {
     margin: 0;
     margin-left: 10px;
@@ -48,12 +43,10 @@
     letter-spacing: normal;
     text-transform: uppercase;
 }
-
-.fa-angle-down {
+.form--btn_title .fa-angle-down {
     font-size: 18px;
     color: $gunmetal;
 }
-
 .create-btn {
     width: 199px;
     height: 50px;
@@ -70,17 +63,9 @@
     border: none;
     outline: none;
 }
-
 .create-btn:focus { 
     background-color: #d5d5d5;
 }
-
-.fa-address-card {}
-
-.create-title {}
-
-.share-created {}
-
 .text-created {
     // width: 219px;
     // height: 24px;
@@ -98,7 +83,6 @@
     text-align: center;
     color: $gunmetal;
 }
-
 .link-created {
     width: 292px;
     height: 17px;
@@ -111,27 +95,27 @@
     letter-spacing: normal;
     text-align: center;
     color: $dull-orange;
+    text-decoration: none;
 }
-
 .share-twitter {
     width: 181px;
     height: 30px;
-    margin-top: 10px;
-    margin-bottom: 35px;
+    display: block;
+    margin: 10px auto 35px;
+    // margin-top: 10px;
+    // margin-bottom: 35px;
     border-radius: 3px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
     background-color: $azure;
     border:none;
     outline: none;
 }
-
-.fa-twitter {
+.share-twitter .fa-twitter {
     width: 18px;
     height: 18px;
     font-size: 18px;
     color: $white;
 }
-
 .text-twitter {
     font-family: $font-open;
     font-size: 14px;

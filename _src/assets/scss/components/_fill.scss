@@ -1,5 +1,5 @@
 //FILL
-.fill--page{
+.fill--page {
     color:#54585a;
     font-family: OpenSans;  
     font-size: 16px;
@@ -7,30 +7,11 @@
     padding: 0px;
     margin: 0px;
   }
-  .fill--name{
-    display:flex;
-    justify-content: space-between;
-    // border-top: #54585a;
-  }
-   
-  .far-fa-keyboard{
-    width: 21px;
-    height: 18px;
-    font-family: FontAwesome5Pro;
-    font-size: 18px;
-    color: #e17334;
-  }
-  .far-fa-angle-down{
-    width: 16px;
-    height: 18px;
-    font-family: FontAwesome5Pro;
-    font-size: 18px;
-  }
-  .fill--content{
+  .fill--content {
     color: #114e4e;
     line-height: 1.43;
   }
-  .fill--form{
+  .fill--form {
     margin-bottom: 20px;
   }
   .fill--form_label {
@@ -44,7 +25,7 @@
     height: 30px;
     color: #e60808;
 }
-  .fill--btn{
+  .fill--btn {
     width: 140px;
     height: 30px;
     border-radius: 3px;
@@ -83,6 +64,5 @@
     margin-top: 6px;
   }
   .fill--wraper{
-    display:flex;
-    
+    display:flex; 
   }

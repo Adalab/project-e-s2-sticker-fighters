@@ -21,9 +21,14 @@
 
 <body>
 	<div class="page">
-		<header>
-			<partial src="_header.html" label="Header"></partial>
-		</header>
+		
+		<!-- HEADER:
+			the header label is inside of this partial -->
+		<div class="header__wrapper">
+		<partial src="_header.html" label="Header"></partial>
+		</div>
+		<!-- ---- -->
+		
 		<main>
 			<partial src="_card.html" label="Card"></partial>
 			<partial src="_form.html" label="Form"></partial>

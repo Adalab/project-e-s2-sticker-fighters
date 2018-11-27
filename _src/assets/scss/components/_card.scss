@@ -133,13 +133,18 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     text-decoration: none;
 }
 
+.card_icon {
+    font-size: 18px;
+    color: $dark-green-blue;
 
-
-.phone {   
-background: url(../images/mobile.svg);
-background-repeat: no-repeat;
-background-size: cover;
 }
+
+/*Los iconos de mobil y de mail no salían centrados, por eso he tenido que añadirles este margen*/
+
+.problematic_icon {
+    margin-top: 8px;
+}
+
 
 
 
@@ -181,11 +186,34 @@ background-size: cover;
     text-transform: uppercase;
     line-height: 20px;
     position: absolute;
-    bottom: 89%;
+    bottom: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     
+
+    // padding-right: 15px;
+}
+
+.button_icon {
+    color: $gun-metal;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 3px; /*para centrarlo verticalmente*/
+}
+
+
+.button__text {
+    
+    margin-right: 10px;
+    line-height: 0;
+    
+    @media all and (min-width: 768px){
+
+        margin-bottom: 2px;
+
+    }
+
 }
 
 

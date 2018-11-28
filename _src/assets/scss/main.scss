@@ -16,9 +16,26 @@
 
 @import 'components/footer';
 
+
+/* index.html */
 body {
     margin: 0;
 }
+
+/*************/
+
+/* creator.html */
+
+@media all and (min-width:768px) {
+
+    .main__parts {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+/***************/
+
 
 
 

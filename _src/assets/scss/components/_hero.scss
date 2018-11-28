@@ -36,11 +36,11 @@
   height: 24px;
   align-self:center;
   @include Text-Style-2;
-    @media all and(min-width:768px){
-      width: 278px;
-      height: 31px;
-      font-size: 24px;
-    }
+   @media all and(min-width:768px){
+     width: 278px;
+     height: 31px;
+     font-size: 24px;
+   }
 }
 .hero_text{
   align-self:center;
@@ -107,19 +107,18 @@
   height: 42px;
   margin-bottom: 30px;
   text-align: center;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  background-color:#438792;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 21px;
   background-color: $dirty-blue;
   @media all and(min-width:768px){
-    
-    margin-bottom: 69px;
+    margin: 186px 0 60px 0 ;
   }
 }
 .btn-style{
   align-self: center;
   @include Text-Style-5;
   text-transform: uppercase;
+  
 }

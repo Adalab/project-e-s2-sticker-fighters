@@ -1,0 +1,122 @@
+.share {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.share__wrapper {
+    border-bottom: 1px solid #d8d8d8;
+}
+.share-btn {
+    width: 100%;
+    margin: 0 0 30px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.form--btn_title {
+    display: flex;
+    align-items: center;
+}
+.form--btn_title .fa-share-alt  {
+    font-size: 18px;
+    color: $dull-orange;
+}
+.share-title {
+    margin: 0 0 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $font-open;
+    color: $gunmetal;
+    text-transform: uppercase;
+}
+.form--btn_title .fa-angle-down {
+    font-size: 18px;
+    color: $gunmetal;
+}
+.create-btn {
+    width: 199px;
+    height: 50px;
+    margin: 20px auto 30px;
+    padding: 0;
+    text-transform: uppercase;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
+    background-color: $dull-orange;
+    border: none;
+    outline: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create-btn:focus { 
+    background-color: #d5d5d5;
+}
+.fa-address-card {
+    font-size: 18px;
+    color: $white;
+}
+
+.create-title {
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 18px;
+    font-family: $font-open;
+    color: $white;
+}
+
+.share-created {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-created {
+    margin: 20px 0 5px;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $font-open;
+    color: $gunmetal;
+}
+.link-created {
+    margin: 0 auto;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: $font-open;
+    color: $dull-orange;
+    text-align: center;
+    text-decoration: none;
+}
+.share-twitter {
+    width: 181px;
+    height: 30px;
+    margin: 10px auto 35px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.32);
+    background-color: $azure;
+    border:none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-twitter .fa-twitter {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    color: $white;
+}
+.text-twitter {
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: $font-open;
+    color: $white;
+    line-height: 1.43;
+}

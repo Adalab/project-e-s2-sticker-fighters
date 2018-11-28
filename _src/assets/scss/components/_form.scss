@@ -5,5 +5,7 @@
     padding: 0px 20px 0px 20px;
     @media all and (min-width: 768px){
         padding: 0px 40px 0px 30px;
+        width: 50%;
+        box-sizing: border-box;
     }
 }

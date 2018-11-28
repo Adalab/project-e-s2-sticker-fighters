@@ -107,12 +107,16 @@
   height: 42px;
   margin-bottom: 30px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   background-color:#438792;
   border-radius: 21px;
   background-color: $dirty-blue;
+  @media all and(min-width:768px){
+    
+    margin-bottom: 69px;
+  }
 }
 .btn-style{
   align-self: center;

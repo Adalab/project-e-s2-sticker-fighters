@@ -1,11 +1,18 @@
 
 .header_box{
   text-align: center;
-  padding: 0;
+
+  //añadido por Bea
+  width: 250px;
+  height: 64px;
+  //------
   @media all and(min-width:768px){
+    width: 419px;
+    height: 107px;
     
+  }
 }
-}
+
 .container_img-card{
   width: 250px;
   background-size:cover;

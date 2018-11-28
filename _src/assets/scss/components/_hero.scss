@@ -14,10 +14,7 @@
   align-items:center;
   flex-grow: 1;
   margin-top:70px;
-    @media all and(min-width:768px){
-      margin-top:348px;
-      margin-bottom: 60px;
-    }
+
 }
 .hero_title{
   margin: 0;
@@ -26,11 +23,11 @@
   height: 24px;
   align-self:center;
   @include Text-Style-2;
-    @media all and(min-width:768px){
-      width: 278px;
-      height: 31px;
-      font-size: 24px;
-    }
+   @media all and(min-width:768px){
+     width: 278px;
+     height: 31px;
+     font-size: 24px;
+   }
 }
 .hero_text{
   align-self:center;
@@ -55,7 +52,6 @@
   border-radius: 4px;
   box-sizing: border-box;
     @media all and(min-width:768px){
-      margin-bottom: 186px;
       width: 325px;
       height: 86px;
       border: 5px solid rgba(231, 142, 86, 0.21);
@@ -91,12 +87,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#438792;
   border-radius: 21px;
   background-color: $dirty-blue;
+  @media all and(min-width:768px){
+    margin: 186px 0 60px 0 ;
+  }
 }
 .btn-style{
   align-self: center;
   @include Text-Style-5;
   text-transform: uppercase;
+  
 }

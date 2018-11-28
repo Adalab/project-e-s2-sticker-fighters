@@ -28,9 +28,11 @@
 //boton comenzar
 @mixin Text-Style-5 {
   font-family: 'Open Sans', sans-serif;
+  border: none;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  background-color: $dirty-blue;
   color: $white;
 }
 @mixin Text-Style-6 {

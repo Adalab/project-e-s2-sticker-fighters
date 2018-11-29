@@ -141,7 +141,6 @@ gulp.task('scripts-dist', function(done){
   gulp.src(config.js.src)
     .pipe(plumber({errorHandler: notify.onError('Error: <%= error.message %>')}))
     .pipe(concat('main.min.js'))
-    .pipe(uglify())
     .pipe(gulp.dest(config.js.dist));
   done();
 });

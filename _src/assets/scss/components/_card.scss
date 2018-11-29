@@ -1,28 +1,10 @@
-// Variables
-
-    //colores del degradado de fondo
-$silver: #bfcdd0;
-$pale-grey: #dde9ed;
-
-    //color del fondo de la tarjeta
-$white: #fff;
-
-    // color del borde de los titulos
-$hospital-green: #a2deaf; 
-
-    //fuentes
+//fuentes
 $titles-font:'Dosis';
 $skills-font: 'Open Sans';
 $dark-green-blue: #114e4e; //$title-name-color:
 $gun-metal:#54585a; //$title-profession-color
 
-    //skill list
-$dirty-blue: #438792; //color de fondo de los li de la lista
-
-
-
 .cardSection {
-
     background-image: linear-gradient(to bottom, #f5f5f5, #ffffff);
 
     @media all and (min-width: 768px){
@@ -37,7 +19,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     padding-top: 60px;
     background: linear-gradient($silver, $pale-grey);
     
-
     @media all and (min-width: 768px){
 
         border-radius: 6px;
@@ -45,15 +26,10 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
         display: flex;
         align-items: center;
         justify-content: center;
-
-        
     }
-
 }
 
-
 .card__wrapper {
-
     position: relative;
     width: 240px;
     margin: 0 auto;
@@ -61,10 +37,7 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     background-color:$white;
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
-          
 }
-
-
 
 // CARD TITLES
 
@@ -75,11 +48,11 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     margin: 0 0 10px 0;
     padding-left: 15px; //20-5(ancho del borde)
     font-family: $titles-font, sans-serif;
-   
 }
 
 .title__name {
     margin: 0;
+    height: 20px;
     font-size: 18px;
     line-height: 20px;
     font-weight: bold;
@@ -89,12 +62,11 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 .title__profession {
     margin: 0;
     padding-top: 5px;
+    height: 20px;
     font-size: 16px;
     line-height: 20px;
     color: $gun-metal;
-
 }
-
 
 // CARD IMAGE
 
@@ -105,7 +77,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .image__photo {
@@ -115,17 +86,16 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 }
 
 
-// lists
+// LISTS
 
 .card__list {
-
     list-style: none;
     margin: 0;
     display: flex;
-    
 }
 
 //Icon list
+
 .card__contact-list {
     padding: 10px 0 10px 0;
 }
@@ -140,11 +110,8 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 }
 
 .contact-list__element:first-child {
-    
     margin-left: 20px;
-    
 }
-
 
 .element__link {
     width: 28px; //32-4 (de los bordes del li)
@@ -160,7 +127,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 .card_icon {
     font-size: 18px;
     color: $dark-green-blue;
-
 }
 
 /*Los iconos de movil y de mail no salían centrados, por eso he tenido que añadirles este margen*/
@@ -168,9 +134,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 .problematic_icon {
     margin-top: 8px;
 }
-
-
-
 
 //Skill list
 
@@ -196,8 +159,7 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
 
 // RESET BUTTON
 
-.card__button {
-    
+.card__button {  
     width: 75px;
     height: 30px;
     box-sizing: border-box;
@@ -214,8 +176,6 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
     // padding-right: 15px;
 }
 
@@ -226,20 +186,11 @@ $dirty-blue: #438792; //color de fondo de los li de la lista
     margin-top: 3px; /*para centrarlo verticalmente*/
 }
 
-
 .button__text {
-    
     margin-right: 10px;
     line-height: 0;
     
     @media all and (min-width: 768px){
-
         margin-bottom: 2px;
-
     }
-
 }
-
-
-
-

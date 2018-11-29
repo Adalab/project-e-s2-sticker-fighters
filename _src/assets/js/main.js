@@ -14,24 +14,22 @@ function fillCard(e){
   
   console.log(culpable);
   
-  const nombreClaseElementoDondeQuieroPintar = culpable.getAttribute('vinculo');
+  const classCardElement = culpable.getAttribute('data-vinculo');
   
-  console.log(nombreClaseElementoDondeQuieroPintar);
+  console.log(classCardElement);
   
-  const elementoDondePinto = document.querySelector('.'+nombreClaseElementoDondeQuieroPintar);
+  const cardElement = document.querySelector('.'+classCardElement);
   
- console.log(elementoDondePinto);
+ console.log(cardElement);
   
-   if (nombreClaseElementoDondeQuieroPintar === 'title__name') { // 
+   if (classCardElement === 'title__name') { // 
      
      fullNameCard.innerHTML = culpable.value;
-    
      
-   }else if (nombreClaseElementoDondeQuieroPintar === 'title__profession'){
+   }else if (classCardElement === 'title__profession'){
      
      positionCard.innerHTML = culpable.value;
     
-     
    }
 
 }

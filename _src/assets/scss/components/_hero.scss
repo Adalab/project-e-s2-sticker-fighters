@@ -2,22 +2,18 @@
 .page_wrapper{
   margin:0;
   padding:0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 .hero_box{
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   flex-grow: 1;
   margin-top:70px;
-    @media all and(min-width:768px){
-      margin-top:348px;
-      margin-bottom: 60px;
-    }
 }
 .hero_title{
   margin: 0;
@@ -88,6 +84,7 @@
   height: 42px;
   border-radius: 21px;
   background-color: $dirty-blue;
+  outline:none;
     @media all and(min-width:768px){
       margin-top: 186px;
    }

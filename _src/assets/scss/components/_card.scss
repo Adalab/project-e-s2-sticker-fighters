@@ -71,18 +71,24 @@ $gun-metal:#54585a; //$title-profession-color
 // CARD IMAGE
 
 .card__image {
-    width: 240px;
-    height: 200px;
-    background-image: url(../images/cat.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // width: 240px;
+    // height: 200px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    // background-image: url(../images/cat.png);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+   
 }
 
 .image__photo {
-    width: 0;
-    height: 0;
-    display: none; // ocultamos la imagen para que el lector de pantallas lea que hay una imagen, pero se vea la imagen del contendor 
+    width: 100%;
+    display: block;
+
+    // width: 0;
+    // height: 0;
+    // display: none; // ocultamos la imagen para que el lector de pantallas lea que hay una imagen, pero se vea la imagen del contendor 
 }
 
 

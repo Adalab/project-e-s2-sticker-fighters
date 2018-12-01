@@ -1,4 +1,4 @@
-
+'use-strict';
 const fr = new FileReader();
 
 
@@ -18,6 +18,7 @@ function writeImage() {
 }
 
 function fakeFileClick() {
+    console.log('fake');
  fileField.click();
 }
 

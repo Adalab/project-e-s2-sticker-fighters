@@ -71,13 +71,15 @@ $gun-metal:#54585a; //$title-profession-color
 // CARD IMAGE
 
 // .card__image {
-    
+//     width: 240px;
+//     height: 367px;
 // }
 
 .image__photo {
     height: 200px;
     width: 240px;
     display: block;
+    background-image: url(../images/cat.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

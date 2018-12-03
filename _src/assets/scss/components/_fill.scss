@@ -72,7 +72,8 @@
 }
 
 .fill--input__img {
-  border: 1px solid  green;
+  border: 1px solid $hospital-green;
+  margin: 5px 20px;
   width: 30px;
   height: 30px;
   background: center center no-repeat;

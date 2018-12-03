@@ -40,7 +40,7 @@ function createLinkedinLink(e) {
 
 function createGithubLink(e) {
   const github = githubOrigin.value;
-  const item = `<a class="element__link" href="https:// ${github}"target="_blank">
+  const item = `<a class="element__link" href="https://github.com/ ${github}"target="_blank">
   <i class="card_icon fab fa-github-alt"></i>
 </a>`;
   githubDest.innerHTML = item;

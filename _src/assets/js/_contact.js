@@ -24,7 +24,7 @@ function createTelLink(e) {
 
 function createMailLink(e) {
   const mail = mailOrigin.value;
-  const item = `<a class="element__link" href="mailto:${mail}"target="_blank">
+  const item = `<a class="element__link " href="mailto:${mail}"target="_blank">
   <i class="problematic_icon card_icon fas fa-envelope"></i>
 </a>`;
   mailDest.innerHTML = item;

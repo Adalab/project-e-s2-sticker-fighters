@@ -100,28 +100,22 @@ $gun-metal:#54585a; //$title-profession-color
     padding: 10px 0 10px 0;
 }
 
-.contact-list__element {
-    width: 32px;
-    height: 32px;
-    margin-left: 10px;
-    box-sizing: border-box;
-    border: 2px solid $hospital-green;
-    border-radius: 16px;
-}
-
 .contact-list__element:first-child {
     margin-left: 20px;
 }
 
 .element__link {
-    width: 28px; //32-4 (de los bordes del li)
-    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     color: $dark-green-blue;
     text-decoration: none;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 2px solid $hospital-green;
+    border-radius: 16px;
 }
 
 .card_icon {

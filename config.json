@@ -18,7 +18,9 @@
 	"js": {
 		"src": [
       "_src/assets/js/main.js",
-      "_src/assets/js/_contact.js"
+      "_src/assets/js/_contact.js",
+      "_src/assets/js/_image.js"
+
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

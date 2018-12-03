@@ -72,11 +72,11 @@
 }
 
 .fill--input__img {
-  width: 29px;
-  height: 29px;
-  border: 1px solid $hospital-green;
-  margin-left: 20px;
-  margin-top: 6px;
+  border: 1px solid  green;
+  width: 30px;
+  height: 30px;
+  background: center center no-repeat;
+  background-size: cover;
 }
 
 .fill--wraper {

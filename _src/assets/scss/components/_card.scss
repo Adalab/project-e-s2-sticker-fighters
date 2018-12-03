@@ -70,21 +70,18 @@ $gun-metal:#54585a; //$title-profession-color
 
 // CARD IMAGE
 
-.card__image {
-    width: 240px;
-    height: 200px;
-    background-image: url(../images/cat.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+// .card__image {
+    
+// }
 
 .image__photo {
-    width: 0;
-    height: 0;
-    display: none; // ocultamos la imagen para que el lector de pantallas lea que hay una imagen, pero se vea la imagen del contendor 
+    height: 200px;
+    width: 240px;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
 
 // LISTS
 

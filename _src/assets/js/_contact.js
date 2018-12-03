@@ -18,7 +18,7 @@ const githubDest = document.querySelector('.contact-list__github');
 
 function createTelLink(e) {
   const tel = telOrigin.value;
-  const item = `<a href="tel:${tel}" class="contact-list__phone"> <i class="problematic_icon card_icon fas fa-mobile-alt"></i></a>`;
+  const item = `<a class="element__link" href="tel:${tel}target="_blank"> <i class="problematic_icon card_icon fas fa-mobile-alt"></i></a>`;
   telDest.innerHTML = item;
 }
 

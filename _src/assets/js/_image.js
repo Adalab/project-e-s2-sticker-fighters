@@ -7,6 +7,7 @@ const uploadBtn = document.querySelector('.fill--btn');
 //se recoge el button
 const fileField = document.querySelector('#img-selector');
 const profileImage = document.querySelector('.image__photo');
+const mini = document.querySelector('.fill--input__img');
 
 function getImage(e){
   var myFile = e.currentTarget.files[0];
@@ -14,7 +15,9 @@ function getImage(e){
   fr.readAsDataURL(myFile);
 }
 function writeImage() {
-  profileImage.src= fr.result;
+  // profileImage.src= fr.result;
+  profileImage.style.backgroundImage = `url(${fr.result})`;
+  mini.style.backgroundImage = `url(${fr.result})`;
 }
 
 function fakeFileClick() {
@@ -22,6 +25,8 @@ function fakeFileClick() {
  fileField.click();
 }
 
-fileField.addEventListener('change', getImage);
 uploadBtn.addEventListener('click', fakeFileClick);
+fileField.addEventListener('change', getImage);
+
+
 

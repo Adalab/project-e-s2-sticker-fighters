@@ -70,27 +70,18 @@ $gun-metal:#54585a; //$title-profession-color
 
 // CARD IMAGE
 
-.card__image {
-    // width: 240px;
-    // height: 200px;
-    border: 1px solid #ccc;
-    margin: 0 auto;
-    // background-image: url(../images/cat.png);
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-   
-}
+// .card__image {
+    
+// }
 
 .image__photo {
-    width: 100%;
+    height: 200px;
+    width: 240px;
     display: block;
-
-    // width: 0;
-    // height: 0;
-    // display: none; // ocultamos la imagen para que el lector de pantallas lea que hay una imagen, pero se vea la imagen del contendor 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-
 
 // LISTS
 

@@ -97,6 +97,7 @@ $gun-metal:#54585a; //$title-profession-color
 
 .card__contact-list {
     padding: 10px 0 10px 0;
+    min-height: 34px;
 }
 
 .contact-list__element:first-child {
@@ -115,6 +116,7 @@ $gun-metal:#54585a; //$title-profession-color
     box-sizing: border-box;
     border: 2px solid $hospital-green;
     border-radius: 16px;
+    margin-right: 10px;
 }
 
 .card_icon {

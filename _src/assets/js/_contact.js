@@ -20,6 +20,10 @@ function createTelLink(e) {
   const tel = telOrigin.value;
   const item = `<a class="element__link" href="tel:${tel}target="_blank"> <i class="problematic_icon card_icon fas fa-mobile-alt"></i></a>`;
   telDest.innerHTML = item;
+
+  if (tel === '') {
+    telDest.innerHTML = '';
+  }
 }
 
 function createMailLink(e) {
@@ -28,6 +32,10 @@ function createMailLink(e) {
   <i class="problematic_icon card_icon fas fa-envelope"></i>
 </a>`;
   mailDest.innerHTML = item;
+
+  if (mail === '') {
+    mailDest.innerHTML = '';
+  }
 }
 
 function createLinkedinLink(e) {
@@ -36,6 +44,10 @@ function createLinkedinLink(e) {
   <i class="card_icon fab fa-linkedin-in"></i>
 </a>`;
   linkedinDest.innerHTML = item;
+
+  if (linkedin === '') {
+    linkedinDest.innerHTML = '';
+  }
 }
 
 function createGithubLink(e) {
@@ -44,6 +56,10 @@ function createGithubLink(e) {
   <i class="card_icon fab fa-github-alt"></i>
 </a>`;
   githubDest.innerHTML = item;
+
+  if (github === '') {
+    githubDest.innerHTML = '';
+  }
 }
 
 telOrigin.addEventListener('keyup', createTelLink);

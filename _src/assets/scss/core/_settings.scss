@@ -1,24 +1,32 @@
 //Color palette
-$black: #000000;
-$dirty-blue: #438792;
-$light-khaki: #f9f4dc;
-$white: #ffffff;
-$hospital-green: #a2deaf;
 $azure: #00a0f5;
+$black: #000000;
 $brownish-grey: #6b6b6b;
-$white-two: #d8d8d8;
-$gunmetal: #54585a;
-$pinkish-grey: #c5c5c5;
-$pale-grey: #dde9ed;
 $dark-green-blue: #114e4e;
-$tomato: #e95626;
-$light-grey-blue: #a0c0cf;
-$rusty-red: #bd1010;
-$pale-grey-two: #dfe5eb;
+$dirty-blue: #438792;
+$dried-blood: #420101;
 $dull-orange: #e17334;
+$gunmetal: #54585a;
+$hospital-green: #a2deaf;
+$light-grey-blue: #a0c0cf;
+$light-khaki: #f9f4dc;
+$pale-grey: #dde9ed;
+$pale-grey-two: #dfe5eb;
+$pinkish-grey: #c5c5c5;
+$rusty-red: #bd1010;
 $silver: #bfcdd0;
+$slate: #3e5b65;
+$tomato: #e95626;
+$white: #ffffff;
+$white-two: #d8d8d8;
+$white-three: #f5f5f5;
+//Cambiar nombre del color-white
+$color-white: #f3f4f5;
+
 
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Merriweather:900|Open+Sans:400,600');
 $font-open: 'Open Sans', sans-serif;
 $font-merriwheater: 'Merriweather', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Ubuntu')

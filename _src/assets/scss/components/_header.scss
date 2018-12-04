@@ -1,15 +1,11 @@
-
 .header_box{
   text-align: center;
-
-  //añadido por Bea
   width: 250px;
   height: 64px;
-  //------
+  
   @media all and(min-width:768px){
     width: 419px;
-    height: 107px;
-    
+    height: 107px; 
   }
 }
 
@@ -18,8 +14,9 @@
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
-    @media all and(min-width:768px){
-      width: 419px;
-      height: 107px;
+
+  @media all and(min-width:768px){
+    width: 419px;
+    height: 107px;
   }
 }

@@ -131,6 +131,10 @@ $gun-metal:#54585a; //$title-profession-color
 
 .skills-list__element {
     margin-left: 15px;
+}
+
+.element__content {
+    margin: 0;
     padding: 1px 5px;
     text-transform: uppercase;
     font-family: $skills-font, sans-serif;
@@ -138,10 +142,6 @@ $gun-metal:#54585a; //$title-profession-color
     color: $white;
     border-radius: 4px;
     background-color: $dirty-blue;
-}
-
-.element__content {
-    margin: 0;
 }
 
 // RESET BUTTON
@@ -180,4 +180,23 @@ $gun-metal:#54585a; //$title-profession-color
     @media all and (min-width: 768px){
         margin-bottom: 2px;
     }
+}
+//colors 
+.red-dark-color {
+    color: $dried-blood;
+}
+.red-medium-bg {
+    background-color: $rusty-red;
+}
+.red-light-border {
+    border-color: $tomato;
+}
+.blue-dark-color {
+    color: $slate;
+}
+.blue-medium-bg {
+    background-color: $pale-grey-two;
+}
+.blue-light-border {
+    border-color: $light-grey-blue;
 }

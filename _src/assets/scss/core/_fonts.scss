@@ -55,3 +55,14 @@ line-height: 1.43;
 opacity: 0.5;
 color: $brownish-grey;
 }
+
+//typo scripts radiobuttons
+@mixin Comic {
+  font-family: 'Comic Sans MS', arial, sans-serif;
+}
+@mixin Montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+@mixin Ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}

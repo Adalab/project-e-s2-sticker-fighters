@@ -37,6 +37,7 @@ $gun-metal:#54585a; //$title-profession-color
     background-color:$white;
     border-radius: 2px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    @include Comic;
 }
 
 // CARD TITLES
@@ -47,7 +48,6 @@ $gun-metal:#54585a; //$title-profession-color
     box-sizing: border-box;
     margin: 0 0 10px 0;
     padding-left: 15px; //20-5(ancho del borde)
-    font-family: $titles-font, sans-serif;
 }
 
 .title__name {
@@ -139,7 +139,6 @@ $gun-metal:#54585a; //$title-profession-color
     margin: 0;
     padding: 1px 5px;
     text-transform: uppercase;
-    font-family: $skills-font, sans-serif;
     font-size: 13px;
     color: $white;
     border-radius: 4px;
@@ -156,7 +155,7 @@ $gun-metal:#54585a; //$title-profession-color
     border-radius: 15px;
     background-color: transparent;
     color: $gun-metal;
-    font-family: $skills-font;
+    //font-family: $skills-font;
     font-size: 12px;
     text-transform: uppercase;
     line-height: 20px;
@@ -216,4 +215,16 @@ $gun-metal:#54585a; //$title-profession-color
     .element__content {
         background-color: $light-grey-blue;
     }
+}
+
+//scripts typography class
+
+.card__typo-comic {
+    @include Comic;
+}
+.card__typo-montserrat {
+    @include Montserrat;
+}
+.card__typo-ubuntu {
+    @include Ubuntu;
 }

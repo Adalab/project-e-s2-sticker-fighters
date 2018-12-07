@@ -165,7 +165,6 @@ $gun-metal:#54585a; //$title-profession-color
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // padding-right: 15px;
 }
 
 .button_icon {
@@ -177,8 +176,7 @@ $gun-metal:#54585a; //$title-profession-color
 
 .button__text {
     margin-right: 10px;
-    line-height: 0;
-    
+    line-height: 0; 
     @media all and (min-width: 768px){
         margin-bottom: 2px;
     }
@@ -194,6 +192,8 @@ $gun-metal:#54585a; //$title-profession-color
     }
     .element__link {
         border-color: $tomato;
+    }
+    .card_icon{
         color: $dried-blood;
     }
     .element__content {
@@ -205,13 +205,15 @@ $gun-metal:#54585a; //$title-profession-color
         color: $slate;
     }
     .card__titles {
-        border-color: $light-grey-blue;
+        border-color:  $pale-grey-two;
     }
     .element__link {
         border-color: $light-grey-blue;
+    }
+    .card_icon{
         color: $slate;
     }
     .element__content {
-        background-color: $pale-grey-two;
+        background-color: $light-grey-blue;
     }
 }

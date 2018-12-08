@@ -10,21 +10,17 @@
   border-bottom: 1px solid $white-two;
   padding-bottom: 20px;
 }
-
 .fill--content {
   color: $dark-green-blue;
   line-height: 1.43;
-}
-  
+} 
 .fill--form {
   margin-bottom: 20px;
 }
-
 .fill--form_label {
   display: block;
   padding-bottom: 6px; 
 }
-
 .fill--form_input {
   padding: 4px 10px 6px;
   border: 1px solid $hospital-green;
@@ -33,7 +29,6 @@
   height: 30px;
   color: $dark-green-blue;
 }
-
 .fill--btn {
   width: 140px;
   height: 30px;
@@ -45,32 +40,26 @@
   color: $white;
   margin-top: 6px;
 }
-
 .fill--form__btn {
   display: flex;
   flex-direction: column;
 }
-
 .search--btn {
   color:transparent;
   display: none;
 }
-
 .fill--checkbox__text {
   margin-top:40px;
   margin-bottom: 10px;
 }
-
 .fill--checkbox__item {
   margin-bottom:10px;
 }
-
 .fill--checkbox__input {
   margin: 0 10px 0 0;
   width: 17px;
   height: 17px;;
 }
-
 .fill--input__img {
   border: 1px solid $hospital-green;
   margin: 5px 20px;
@@ -79,7 +68,6 @@
   background: center center no-repeat;
   background-size: cover;
 }
-
 .fill--wraper {
   display:flex; 
 }

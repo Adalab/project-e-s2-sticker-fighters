@@ -1,3 +1,4 @@
+//SHARE
 .share {
     margin: 0;
     padding: 0;
@@ -55,7 +56,7 @@
     align-items: center;
 }
 .create-btn:focus { 
-    background-color: #d5d5d5;
+    background-color: $grey-focus;
 }
 .fa-address-card {
     font-size: 18px;

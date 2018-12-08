@@ -1,8 +1,8 @@
+//FOOTER
 .footer_box{
   margin:0;
   padding:0;
   height: 110px;
-  
   background-color: $white;
   @include Text-Style-8;
     @media all and(min-width:768px){

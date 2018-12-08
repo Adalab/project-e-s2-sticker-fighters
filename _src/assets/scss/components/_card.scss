@@ -57,6 +57,7 @@ $gun-metal:#54585a; //$title-profession-color
     line-height: 20px;
     font-weight: bold;
     color: $dark-green-blue;
+    height: 20px;
 }
 
 .title__profession {
@@ -66,6 +67,7 @@ $gun-metal:#54585a; //$title-profession-color
     font-size: 16px;
     line-height: 20px;
     color: $gun-metal;
+    height: 20px;
 }
 
 // CARD IMAGE
@@ -143,12 +145,13 @@ $gun-metal:#54585a; //$title-profession-color
     color: $white;
     border-radius: 4px;
     background-color: $dirty-blue;
+    height: 20px;
+    line-height: 20px;
 }
 
 // RESET BUTTON
 
 .card__button {  
-    width: 75px;
     height: 30px;
     box-sizing: border-box;
     border: 1px solid $white;
@@ -164,21 +167,17 @@ $gun-metal:#54585a; //$title-profession-color
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0 10px;
 }
 
 .button_icon {
     color: $gun-metal;
     font-size: 12px;
     line-height: 20px;
-    margin-top: 3px; /*para centrarlo verticalmente*/
 }
 
 .button__text {
-    margin-right: 10px;
-    line-height: 0; 
-    @media all and (min-width: 768px){
-        margin-bottom: 2px;
-    }
+    margin-left: 10px;
 }
 
 //scripts class add

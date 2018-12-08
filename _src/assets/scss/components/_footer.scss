@@ -4,6 +4,7 @@
   padding:0;
   height: 110px;
   background-color: $white;
+  border-top: 1px solid $white-two;
   @include Text-Style-8;
     @media all and(min-width:768px){
       height: 60px;

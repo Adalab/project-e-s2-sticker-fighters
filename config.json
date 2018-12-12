@@ -18,10 +18,12 @@
 	"js": {
 		"src": [
       "_src/assets/js/main.js",
+      "_src/assets/js/_personal.js",
       "_src/assets/js/_contact.js",
       "_src/assets/js/_image.js",
       "_src/assets/js/_colors.js",
-      "_src/assets/js/_typography.js"
+      "_src/assets/js/_typography.js",
+      "_src/assets/js/_skills.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

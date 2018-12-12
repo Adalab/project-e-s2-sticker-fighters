@@ -1,7 +1,6 @@
 //CORE
-@import 'core/settings';
-@import 'core/commons';
 @import 'core/colors';
+@import 'core/commons';
 @import 'core/fonts';
 
 //COMPONENTS
@@ -13,29 +12,7 @@
 @import 'components/fill';
 @import 'components/share';
 @import 'components/form';
-
 @import 'components/footer';
-
-
-/* index.html */
-body {
-    margin: 0;
-}
-
-/*************/
-
-/* creator.html */
-
-@media all and (min-width:768px) {
-
-    .main__parts {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-}
-
-/***************/
-
 
 
 

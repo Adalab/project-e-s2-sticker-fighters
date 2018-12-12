@@ -1,7 +1,7 @@
+//FORM
 .form {
-    background-image: linear-gradient(to bottom, #f5f5f5, #ffffff);
-    padding: 0px 20px 0px 20px;
-    
+    background-image: linear-gradient(to bottom, $white-three, $white);
+    padding: 0px 20px 0px 20px;   
     @media all and (min-width: 768px){
         padding: 0px 40px 0px 30px;
         width: 50%;

@@ -8,7 +8,7 @@ const fullNameCard = document.querySelector('.title__name');
 const positionCard = document.querySelector('.title__profession');
 
 
-function fillCard(e) {
+function fillCard(e){
 
   const culpable = e.currentTarget;
 
@@ -18,19 +18,19 @@ function fillCard(e) {
 
   console.log(classCardElement);
 
-  const cardElement = document.querySelector('.' + classCardElement);
+  const cardElement = document.querySelector('.'+classCardElement);
 
-  console.log(cardElement);
+ console.log(cardElement);
 
-  if (classCardElement === 'title__name') { //
+   if (classCardElement === 'title__name') { //
 
-    fullNameCard.innerHTML = culpable.value;
+     fullNameCard.innerHTML = culpable.value;
 
-  } else if (classCardElement === 'title__profession') {
+   }else if (classCardElement === 'title__profession'){
 
-    positionCard.innerHTML = culpable.value;
+     positionCard.innerHTML = culpable.value;
 
-  }
+   }
 
 }
 

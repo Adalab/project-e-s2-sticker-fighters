@@ -3,6 +3,7 @@
 const button = document.querySelector('.create-btn');
 const responseURL = document.querySelector('.link-created');
 const form = document.querySelector('.form');
+const twitter = document.querySelector('.link-twitter');
 
 // var my_func = function(event) {
 //   alert("me and all my relatives are owned by China");
@@ -36,9 +37,9 @@ function send() {
     .then(url => {
 
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
+
+      // twitter.setAttribute(href) = `https://twitter.com/home?status=${url.cardURL}`;
     });
 }
-
-
 
 button.addEventListener('click', send);

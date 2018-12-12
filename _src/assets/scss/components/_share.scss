@@ -55,7 +55,7 @@
     justify-content: center;
     align-items: center;
 }
-.create-btn:focus { 
+.create-btn:focus {
     background-color: $grey-focus;
 }
 .fa-address-card {
@@ -93,6 +93,9 @@
     font-family: $font-open;
     color: $dull-orange;
     text-align: center;
+    text-decoration: none;
+}
+.link-twitter{
     text-decoration: none;
 }
 .share-twitter {

@@ -36,7 +36,6 @@ function send() {
     .then(url => {
 
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
-      console.log(url.cardURL);
     });
 }
 

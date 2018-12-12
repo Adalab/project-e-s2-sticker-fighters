@@ -2,6 +2,14 @@
 
 const button = document.querySelector('.create-btn');
 const responseURL = document.querySelector('.link-created');
+const form = document.querySelector('.form');
+
+// var my_func = function(event) {
+//   alert("me and all my relatives are owned by China");
+//   event.preventDefault();
+// };
+
+// form.addEventListener("submit", my_func, true);
 
 const objectJson = {
   "palette":"",
@@ -28,10 +36,10 @@ function send() {
     .then(url => {
 
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
+      console.log(url.cardURL);
     });
 }
 
 
-button.addEventListener('click', send);
 
-//responeURL poner o quitar el <a> o de js o del html
+button.addEventListener('click', send);

@@ -18,6 +18,7 @@
 	"js": {
 		"src": [
       "_src/assets/js/main.js",
+      "_src/assets/js/_personal.js",
       "_src/assets/js/_get-url.js",
       "_src/assets/js/_contact.js",
       "_src/assets/js/_image.js",

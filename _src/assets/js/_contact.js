@@ -15,7 +15,6 @@ const githubOrigin = document.querySelector('#github');
 const githubDest = document.querySelector('.contact-list__github');
 
 
-
 function createTelLink(e) {
   const tel = telOrigin.value;
   const item = `<a class="element__link" href="tel:${tel}target="_blank"> <i class="problematic_icon card_icon fas fa-mobile-alt"></i></a>`;
@@ -24,6 +23,8 @@ function createTelLink(e) {
   if (tel === '') {
     telDest.innerHTML = '';
   }
+  objectJson.phone = tel;
+  console.log(objectJson);
 }
 
 function createMailLink(e) {
@@ -36,6 +37,9 @@ function createMailLink(e) {
   if (mail === '') {
     mailDest.innerHTML = '';
   }
+  objectJson.email = mail;
+  console.log(objectJson.email);
+
 }
 
 function createLinkedinLink(e) {
@@ -48,6 +52,8 @@ function createLinkedinLink(e) {
   if (linkedin === '') {
     linkedinDest.innerHTML = '';
   }
+  objectJson.linkedin = linkedin;
+  console.log(objectJson.linkedin);
 }
 
 function createGithubLink(e) {
@@ -60,6 +66,8 @@ function createGithubLink(e) {
   if (github === '') {
     githubDest.innerHTML = '';
   }
+  objectJson.github = github;
+  console.log(objectJson.github);
 }
 
 telOrigin.addEventListener('keyup', createTelLink);

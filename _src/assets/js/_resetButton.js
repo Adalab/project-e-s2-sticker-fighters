@@ -1,17 +1,32 @@
-// 'use strict';
+'use strict';
 
-// const resetButton = document.querySelector('.card__button');
-// let fillFormImput= document.querySelector('.fill--form_imput');
-// let clean= '';
+const resetButton = document.querySelector('.card__button');
+let clear= '';
 
-// function resetCard(){
-//   // fullName.value = fullName.setAttribute('placeholder', 'ppermint') ;
-//   mailOrigin.innerHTML = clean;
-//   // fillFormImput.value = setAttribute('placeholder',' Ej: sally-hill@gmail.com');
-//   // fillFormImput.value = ' Ej: sally-hill@gmail.com';
-//   // console.log(fillFormImput.value);
-// }
-// resetButton.addEventListener('click',resetCard);
+function formReset() {
+  fullName.value = clear;
+  position.value = clear;
+  telOrigin.value = clear;
+  mailOrigin.value = clear;
+  linkedinOrigin.value = clear;
+  githubOrigin.value = clear;
+}
+
+function resetCard(){
+  // fullName.value = fullName.setAttribute('placeholder', 'ppermint') ;
+  // fullName.value = clean;
+  // position.value = clean;
+  // telDest.innerHTML = clean ;
+  // mailOrigin.innerHTML = clean;
+  // linkedinOrigin.innerHTML = clean;
+  // fillFormImput.value = setAttribute('placeholder',' Ej: sally-hill@gmail.com');
+  // fillFormImput.innerHTML = 'Ej: sally-hill@gmail.com';
+  formReset()
+}
+
+resetButton.addEventListener('click',resetCard);
+
+console.log(resetButton);
 
 // // //Boton Reset de Maria
 // // let labelName= document.querySelector('.form-label--name');

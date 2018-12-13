@@ -1,7 +1,5 @@
 'use strict';
 
-// <a href="" class="link link--gh"></a>
-
 const telOrigin = document.querySelector('#telNumber');
 const telDest = document.querySelector('.contact-list__phone');
 
@@ -39,7 +37,6 @@ function createMailLink(e) {
   }
   objectJson.email = mail;
   console.log(objectJson.email);
-
 }
 
 function createLinkedinLink(e) {

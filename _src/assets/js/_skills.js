@@ -56,8 +56,8 @@ function paintList(checkers, arraySkills) {
   for (let i = 0; i < arraySkills.length; i++) {
     let content = `        
           <div class="fill--checkbox__item">
-            <label for="skill-options1">
-              <input class="fill--checkbox__input" id="skill-options1" type="checkbox" value="html" name="skills">
+            <label for="skill-options${i}">
+              <input class="fill--checkbox__input" id="skill-options${i}" type="checkbox" value="${arraySkills[i]}" name="skills">
               ${arraySkills[i]}
             </label>
           </div>`;

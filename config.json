@@ -25,7 +25,8 @@
       "_src/assets/js/_colors.js",
       "_src/assets/js/_typography.js",
       "_src/assets/js/_skills.js",
-      "_src/assets/js/_checkBox.js"
+      "_src/assets/js/_checkBox.js",
+      "_src/assets/js/_resetButton.js"
 		],
 		"dest": "public/assets/js/",
     "dist": "docs/assets/js/"

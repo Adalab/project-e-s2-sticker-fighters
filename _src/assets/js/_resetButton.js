@@ -1,14 +1,18 @@
 'use strict';
 
 const resetButton = document.querySelector('.card__button');
+const colorRadio = document.querySelectorAll('.design_input');
+const fontRadio = document.querySelectorAll('.design_input-font');
 let clear= '';
 
 function colorReset() {
-  card.classList.remove('card__theme-blue', 'card__theme-red', );
+  card.classList.remove('card__theme-blue', 'card__theme-red');
+  colorRadio[0].checked = true;
 }
 
 function fontReset() {
-  cardWrapper.classList.remove('card__typo-comic', 'card__typo-monserrat', 'card__typo-ubuntu');
+  cardWrapper.classList.remove('card__typo-monserrat', 'card__typo-ubuntu');
+  fontRadio[1].checked = true;
 }
 
 function formReset() {
@@ -33,9 +37,7 @@ function imageReset() {
   mini.style.backgroundImage = clear;
 }
 
-
 // function skillsReset() {
-
 // }
 
 function resetCard(){
@@ -47,3 +49,6 @@ function resetCard(){
 }
 
 resetButton.addEventListener('click',resetCard);
+
+
+//no se resetea el monserrat

@@ -152,7 +152,9 @@
 
 
 .collapsible--visible {
-  .design--section {
+  .section {
+    display: none;
+    overflow: hidden;
     display: block;
   }
 }

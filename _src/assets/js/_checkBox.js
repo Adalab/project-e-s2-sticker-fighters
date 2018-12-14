@@ -20,11 +20,17 @@ function checkInputs(ev) {
     for (let i = 0; i < inputs.length; i++) {
         let input = inputs[i];
 
-        if (input.checked) {
+        if (input.checked) { //si están checkeados, añades el input al array de chequeados
             checkedInputs.push(input);
+
+            namesCheckedInputs = addSkillsInfo(checkedInputs); //guardamos el string que nos devuelve la función
+            addSkills(namesCheckedInputs);
+
         } else {
             notCheckedInputs.push(input);
         }
+
+
     }
 
     // Si la lista de inputs seleccionados es igual o mayor a 3, 
@@ -36,25 +42,17 @@ function checkInputs(ev) {
 
         }
 
-        namesCheckedInputs = addSkillsInfo(checkedInputs); //guardamos el string que nos devuelve la función
-        addSkills(namesCheckedInputs);
-
-
 
     } else {
         for (let i = 0; i < notCheckedInputs.length; i++) {
             notCheckedInputs[i].disabled = false;
 
         }
-
     }
-
-
-
 }
 
 
-/* Función que devuelve un array donde están recogidos los nombres de las tres habilidades seleccionadas*/
+/** Función que devuelve un array donde están recogidos los nombres de las tres habilidades seleccionadas */ 
 function addSkillsInfo(checkInputs) {
 
     let arrayCheckedInputs = checkInputs; //array con los elementos seleccionados
@@ -69,7 +67,7 @@ function addSkillsInfo(checkInputs) {
         arrayContenido[i] = arrayIds[i].value;
     }
 
-    console.log(arrayContenido);
+    
     return arrayContenido;
 
 
@@ -78,22 +76,22 @@ function addSkillsInfo(checkInputs) {
 /** Función que agrega a la tarjeta y al objeto JSON los skills seleccionados por el usuario */
 
 function addSkills(arrayContenido) {
-    console.log('uuuuee');
-
+    
     //Añadimos la información a la tarjeta
     let allContent = '';
 
     for (let i = 0; i < arrayContenido.length; i++) {
 
-        let content =`<li class="skills-list__element">
+        let content = `<li class="skills-list__element">
                     <p class="element__content">${arrayContenido[i]}</p>
                 </li>`;
-        
+
         allContent += content;
     }
+
     listCardContainer.innerHTML = allContent; //pintamos de una vez todos los li necesarios
 
-   // Añadimos la información al JSON
+    // Añadimos la información al JSON
 
     objectJson.skills = arrayContenido;
     console.log(objectJson);

@@ -87,8 +87,9 @@ function addSkills(arrayContenido) {
     listCardContainer.innerHTML = allContent; //pintamos de una vez todos los li necesarios
 
     // Añadimos la información al JSON
-
+  
     objectJson.skills = arrayContenido;
+        
     console.log(objectJson);
 
 }

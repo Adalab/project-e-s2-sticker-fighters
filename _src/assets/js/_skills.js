@@ -22,7 +22,6 @@ function setList(urlApi) {
 
     //lo pintamos
     paintList (checkers, arraySkills);
-
     
   } else { //no hay nada en el localStorage
 

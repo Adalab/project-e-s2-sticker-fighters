@@ -4,7 +4,7 @@ document.querySelectorAll("input[type=checkbox]")
     .forEach(input => input.addEventListener('click', checkInputs));
 let checkedInputs; //array que se usa en la función checkInputs 
 
-const listCardContainer = document.querySelector('.card__list'); //variable que se usa en la función addSkills
+const listCardContainer = document.querySelector('.card__skills-list'); //variable que se usa en la función addSkills
 
 
 // Funcion manejadora del evento click de cada input
@@ -30,11 +30,6 @@ function checkInputs(ev) {
         //agregamos la info seleccionada a la tarjeta y al JSON
         namesCheckedInputs = addSkillsInfo(checkedInputs); //guardamos el string que nos devuelve la función
         addSkills(namesCheckedInputs);
-
-        console.log('corre el i ' + i);
-        console.log('longitud del array de chequeados ' + checkedInputs.length);
-        console.log(checkedInputs);
-        // if (checkedInputs.length === 0 )
 
     }
 

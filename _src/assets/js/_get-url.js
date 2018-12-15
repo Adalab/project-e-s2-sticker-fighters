@@ -13,8 +13,8 @@ const twitter = document.querySelector('.link-twitter');
 // form.addEventListener("submit", my_func, true);
 
 const objectJson = {
-  "palette":"",
-  "typography":"",
+  "palette":"1",
+  "typography":"2",
   "name" : "",
   "job": "",
   "phone": "",

@@ -151,8 +151,16 @@
 
 
 
-.collapsible--visible {
-  .design--section {
-    display: block;
+//collapsibles
+.section {
+    // display: block;
+    overflow: hidden;
+    display: none;
   }
-}
+
+  .collapsible--visible {
+    .section {
+      display: block;
+    }
+  }
+

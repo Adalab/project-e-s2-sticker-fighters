@@ -3,14 +3,8 @@
 const button = document.querySelector('.create-btn');
 const responseURL = document.querySelector('.link-created');
 const form = document.querySelector('.form');
-const twitter = document.querySelector('.link-twitter');
-
-// var my_func = function(event) {
-//   alert("me and all my relatives are owned by China");
-//   event.preventDefault();
-// };
-
-// form.addEventListener("submit", my_func, true);
+const twitter = document.querySelector('.twitter');
+const twitterLink = document.querySelector('.link-twitter');
 
 const objectJson = {
   "palette":"",
@@ -36,10 +30,14 @@ function send() {
     .then(urlResponse => urlResponse.json())
     .then(url => {
 
+      twitter.classList.remove('twitter');
+      twitter.classList.add('on');
+
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
 
-      twitter.href = `https://twitter.com/home?status=${url.cardURL}`;
-    });
+      twitterLink.href = `https://twitter.com/home?status=${url.cardURL}`;
+    })
+    .catch(err => alert('Servicio no disponible.\nError: ' + err));
 }
 
 button.addEventListener('click', send);

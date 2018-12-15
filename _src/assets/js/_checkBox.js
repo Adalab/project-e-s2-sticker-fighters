@@ -61,21 +61,16 @@ function checkInputs(ev) {
 function addSkillsInfo(checkInputs) {
 
     let arrayCheckedInputs = checkInputs; //array con los elementos seleccionados
-    let arrayIds = ["", "", ""]; //array para guardar las ids de los elementos seleccionados
-    let arrayContenido = ["", "", ""]; //array para guardar el valor del atributo "value" de los elementos seleccionados
+    let arrayIds = []; //array para guardar las ids de los elementos seleccionados
+    let arrayContenido = []; //array para guardar el valor del atributo "value" de los elementos seleccionados
 
     for (let i = 0; i < arrayCheckedInputs.length; i++) {
 
-        //console.log('4 en el for' + arrayCheckedInputs[i].id);
-
-        arrayIds[i] = document.getElementById(arrayCheckedInputs[i].id);
-        arrayContenido[i] = arrayIds[i].value;
+        arrayIds.push(document.getElementById(arrayCheckedInputs[i].id));  
+        arrayContenido.push(arrayIds[i].value);
     }
 
-    
     return arrayContenido;
-
-
 }
 
 /** Función que agrega a la tarjeta y al objeto JSON los skills seleccionados por el usuario */

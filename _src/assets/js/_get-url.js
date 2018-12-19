@@ -43,7 +43,7 @@ function send() {
       // if (objectJson.skills[0]=== "" ) {
       //   objectJson.skills = [];
       // }
-     
+
 
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
 

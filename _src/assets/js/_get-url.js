@@ -43,11 +43,11 @@ function send() {
       // if (objectJson.skills[0]=== "" ) {
       //   objectJson.skills = [];
       // }
-     
+
 
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
 
-      twitter.href = 'https://twitter.com/share?url=' + url.cardURL+'&text='+'¡Ey! Mira que tarjeta más molona acabo de hacer con Javascript ' + '&hashtags='+'JavaScript, Adalab';
+      twitter.href = 'https://twitter.com/share?url=' + url.cardURL+'&text='+'Lo peto con mi tarjeta personal! by Sticker Fighters ' + '&hashtags='+'JavaScript, Adalab';
     });
 }
 

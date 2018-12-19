@@ -4,7 +4,7 @@ document.querySelectorAll("input[type=checkbox]")
     .forEach(input => input.addEventListener('click', checkInputs));
 let checkedInputs; //array que se usa en la función checkInputs 
 
-const listCardContainer = document.querySelector('.card__list'); //variable que se usa en la función addSkills
+const listCardContainer = document.querySelector('.card__skills-list'); //variable que se usa en la función addSkills
 
 
 // Funcion manejadora del evento click de cada input
@@ -14,7 +14,7 @@ function checkInputs(ev) {
     let notCheckedInputs = [];
     let namesCheckedInputs = [];
 
-    const inputs = document.querySelectorAll("input[type=checkbox]");
+    const inputs = document.querySelectorAll(".fill--checkbox__input");
 
     // recorremos todos los inputs y separamos entre inputs checkeados y no checkeados
     for (let i = 0; i < inputs.length; i++) {
@@ -22,14 +22,14 @@ function checkInputs(ev) {
 
         if (input.checked) { //si están checkeados, añades el input al array de chequeados
             checkedInputs.push(input);
-
-            namesCheckedInputs = addSkillsInfo(checkedInputs); //guardamos el string que nos devuelve la función
-            addSkills(namesCheckedInputs);
-
+            
+            
         } else {
             notCheckedInputs.push(input);
         }
-
+        //agregamos la info seleccionada a la tarjeta y al JSON
+        namesCheckedInputs = addSkillsInfo(checkedInputs); //guardamos el string que nos devuelve la función
+        addSkills(namesCheckedInputs);
 
     }
 
@@ -56,21 +56,16 @@ function checkInputs(ev) {
 function addSkillsInfo(checkInputs) {
 
     let arrayCheckedInputs = checkInputs; //array con los elementos seleccionados
-    let arrayIds = ["", "", ""]; //array para guardar las ids de los elementos seleccionados
-    let arrayContenido = ["", "", ""]; //array para guardar el valor del atributo "value" de los elementos seleccionados
+    let arrayIds = []; //array para guardar las ids de los elementos seleccionados
+    let arrayContenido = []; //array para guardar el valor del atributo "value" de los elementos seleccionados
 
     for (let i = 0; i < arrayCheckedInputs.length; i++) {
 
-        console.log('4 en el for' + arrayCheckedInputs[i].id);
-
-        arrayIds[i] = document.getElementById(arrayCheckedInputs[i].id);
-        arrayContenido[i] = arrayIds[i].value;
+        arrayIds.push(document.getElementById(arrayCheckedInputs[i].id));  
+        arrayContenido.push(arrayIds[i].value);
     }
 
-    
     return arrayContenido;
-
-
 }
 
 /** Función que agrega a la tarjeta y al objeto JSON los skills seleccionados por el usuario */
@@ -92,8 +87,9 @@ function addSkills(arrayContenido) {
     listCardContainer.innerHTML = allContent; //pintamos de una vez todos los li necesarios
 
     // Añadimos la información al JSON
-
+  
     objectJson.skills = arrayContenido;
+        
     console.log(objectJson);
 
 }

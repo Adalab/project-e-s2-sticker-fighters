@@ -71,6 +71,15 @@
     color: $white;
 }
 
+.twitter {
+  display: none;
+  overflow: hidden;
+}
+
+.on {
+  display: block;
+}
+
 .share-created {
     display: flex;
     flex-direction: column;

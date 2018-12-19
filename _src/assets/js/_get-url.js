@@ -3,7 +3,8 @@
 const button = document.querySelector('.create-btn');
 const responseURL = document.querySelector('.link-created');
 const form = document.querySelector('.form');
-const twitter = document.querySelector('.link-twitter');
+const twitterLink = document.querySelector('.link-twitter');
+const twitter = document.querySelector('.twitter');
 
 // var my_func = function(event) {
 //   alert("me and all my relatives are owned by China");
@@ -40,15 +41,14 @@ function send() {
     .then(urlResponse => urlResponse.json())
     .then(url => {
 
-      // if (objectJson.skills[0]=== "" ) {
-      //   objectJson.skills = [];
-      // }
-
+      twitter.classList.remove('twitter');
+      twitter.classList.add('on');
 
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
 
-      twitter.href = 'https://twitter.com/share?url=' + url.cardURL+'&text='+'Lo peto con mi tarjeta personal! by Sticker Fighters ' + '&hashtags='+'JavaScript, Adalab';
-    });
+      twitterLink.href = 'https://twitter.com/share?url=' + url.cardURL+'&text='+'Lo peto con mi tarjeta personal! by Sticker Fighters ' + '&hashtags='+'JavaScript, Adalab';
+    })
+    .catch(err => alert('Servicio no disponible.\nError: ' + err));
 }
 
 button.addEventListener('click', send);

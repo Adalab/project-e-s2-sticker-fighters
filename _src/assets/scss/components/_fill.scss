@@ -2,24 +2,23 @@
 
 .fill--page {
   color:$gunmetal;
-  font-family: 'Open Sans', sans-serif;  
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   border: none;
   padding: 0px;
   margin: 0px;
   border-bottom: 1px solid $white-two;
-  padding-bottom: 20px;
 }
 .fill--content {
   color: $dark-green-blue;
   line-height: 1.43;
-} 
+}
 .fill--form {
   margin-bottom: 20px;
 }
 .fill--form_label {
   display: block;
-  padding-bottom: 6px; 
+  padding-bottom: 6px;
 }
 .fill--form_input {
   padding: 4px 10px 6px;
@@ -69,5 +68,5 @@
   background-size: cover;
 }
 .fill--wraper {
-  display:flex; 
+  display:flex;
 }

@@ -149,12 +149,16 @@
     font-size: 16px;
 }
 
-
+//Collapsibles
+.section {
+    display: none;
+    overflow: hidden;
+    //display: block;
+}
 
 .collapsible--visible {
   .section {
-    display: none;
-    overflow: hidden;
     display: block;
   }
 }
+

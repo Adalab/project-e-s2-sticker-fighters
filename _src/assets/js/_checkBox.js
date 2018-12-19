@@ -35,7 +35,7 @@ function checkInputs(ev) {
     //console.log('Content checkedInputs: ' + checkedInputs);
     if (!checkedInputs || checkedInputs.length===0){
       //checkedInputs = [""];
-      addSkills([""]);
+      addSkills(["no definido"]);
     }
     // Si la lista de inputs seleccionados es igual o mayor a 3,
     // tenemos que deshabilitar los inputs no seleccionados y sino,

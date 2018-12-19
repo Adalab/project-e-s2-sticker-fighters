@@ -24,12 +24,32 @@ const objectJson = {
   "linkedin": "",
   "github": "",
   "photo": defaultImage,
-  "skills": ["","",""]
+  "skills": ["no definido"]
 };
 
+function validateEmail() {
+  const email = document.getElementById('email');
+  const error = document.querySelector('.error__wrapper');
 
+  if (email.value === '') {
+
+    error.classList.remove('hidden');
+
+    return false;
+  }else {
+    error.classList.add('hidden');
+  return true;
+  }
+
+}
 
 function send() {
+ //validar el campo requerido de datos
+  let valido = validateEmail();
+
+  if(!valido){
+    return;
+  }
 
   fetch('https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/', {
     method: 'POST',
@@ -40,7 +60,7 @@ function send() {
   })
     .then(urlResponse => urlResponse.json())
     .then(url => {
-
+      console.log(url);
       twitter.classList.remove('twitter');
       twitter.classList.add('on');
 

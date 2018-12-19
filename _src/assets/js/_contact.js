@@ -35,6 +35,7 @@ function createMailLink(e) {
   if (mail === '') {
     mailDest.innerHTML = '';
   }
+  validateEmail();
   objectJson.email = mail;
   console.log(objectJson.email);
 }
@@ -67,8 +68,8 @@ function createGithubLink(e) {
   console.log(objectJson.github);
 }
 
-telOrigin.addEventListener('keyup', createTelLink);
-mailOrigin.addEventListener('keyup', createMailLink);
-linkedinOrigin.addEventListener('keyup', createLinkedinLink);
-githubOrigin.addEventListener('keyup', createGithubLink);
+telOrigin.addEventListener('blur', createTelLink);
+mailOrigin.addEventListener('blur', createMailLink);
+linkedinOrigin.addEventListener('blur', createLinkedinLink);
+githubOrigin.addEventListener('blur', createGithubLink);
 

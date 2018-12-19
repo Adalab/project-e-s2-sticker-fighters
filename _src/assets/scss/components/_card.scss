@@ -223,3 +223,8 @@
 .card__typo-ubuntu {
     @include Ubuntu;
 }
+
+
+.hidden{
+  display: none;
+}

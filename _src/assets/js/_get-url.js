@@ -38,7 +38,7 @@ function send() {
 
       responseURL.innerHTML = `<a href="${url.cardURL}" target="_blank">${url.cardURL}</a>`;
 
-      twitter.href = ` https://twitter.com/home?status=${url.cardURL}`;
+      twitter.href = 'https://twitter.com/share?url=' + url.cardURL+'&text='+'¡Ey! Mira que tarjeta más molona acabo de hacer con Javascript ' + '&hashtags='+'JavaScript, Adalab';
     });
 }
 

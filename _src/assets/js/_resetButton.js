@@ -3,6 +3,7 @@
 const resetButton = document.querySelector('.card__button');
 const colorRadio = document.querySelectorAll('.design_input');
 const fontRadio = document.querySelectorAll('.design_input-font');
+
 let clear= '';
 
 function colorReset() {
@@ -37,15 +38,23 @@ function imageReset() {
   mini.style.backgroundImage = clear;
 }
 
-// function skillsReset() {
-// }
+function skillsReset() {
+console.log(checkers);
+const inputSkills = document.querySelectorAll('.fill--checkbox__input');
+  for(let i=0; i<inputSkills.length; i++){
+
+    inputSkills[i].disabled = false;
+    inputSkills[i].checked = false;
+  }
+  document.getElementById('ul-skills').innerHTML = clear;
+}
 
 function resetCard(){
   colorReset();
   fontReset();
   formReset();
   imageReset();
-  // skillsReset();
+  skillsReset();
 }
 
 resetButton.addEventListener('click',resetCard);

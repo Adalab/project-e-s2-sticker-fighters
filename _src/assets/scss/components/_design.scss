@@ -149,13 +149,11 @@
     font-size: 16px;
 }
 
-
-
-//collapsibles
-.section {
-    // display: block;
-    overflow: hidden;
+.collapsible--visible {
+  .section {
     display: none;
+    overflow: hidden;
+    display: block;
   }
 
   .collapsible--visible {

@@ -3,7 +3,6 @@
 const collapButtons = document.querySelectorAll('.form--btn');
 const collapContainer = document.querySelector('.section');
 
-
 // Función encargada de modificar el icono arrow de un desplegable
 function arrows(element){
   const icon = element.querySelector('.fas');

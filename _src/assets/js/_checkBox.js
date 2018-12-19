@@ -1,8 +1,8 @@
 'use strict';
-// Añadimos un listener para el evento click por cada input 
+// Añadimos un listener para el evento click por cada input
 document.querySelectorAll("input[type=checkbox]")
     .forEach(input => input.addEventListener('click', checkInputs));
-let checkedInputs; //array que se usa en la función checkInputs 
+let checkedInputs; //array que se usa en la función checkInputs
 
 const listCardContainer = document.querySelector('.card__skills-list'); //variable que se usa en la función addSkills
 
@@ -22,8 +22,8 @@ function checkInputs(ev) {
 
         if (input.checked) { //si están checkeados, añades el input al array de chequeados
             checkedInputs.push(input);
-            
-            
+
+
         } else {
             notCheckedInputs.push(input);
         }
@@ -32,9 +32,13 @@ function checkInputs(ev) {
         addSkills(namesCheckedInputs);
 
     }
-
-    // Si la lista de inputs seleccionados es igual o mayor a 3, 
-    // tenemos que deshabilitar los inputs no seleccionados y sino, 
+    //console.log('Content checkedInputs: ' + checkedInputs);
+    if (!checkedInputs || checkedInputs.length===0){
+      //checkedInputs = [""];
+      addSkills([""]);
+    }
+    // Si la lista de inputs seleccionados es igual o mayor a 3,
+    // tenemos que deshabilitar los inputs no seleccionados y sino,
     // habilitamos los inputs no seleccionados.
     if (checkedInputs.length >= 3) { //deshabilitamos las otras opciones y mandamos la info a la tarjeta
         for (let i = 0; i < notCheckedInputs.length; i++) {
@@ -52,7 +56,7 @@ function checkInputs(ev) {
 }
 
 
-/** Función que devuelve un array donde están recogidos los nombres de las tres habilidades seleccionadas */ 
+/** Función que devuelve un array donde están recogidos los nombres de las tres habilidades seleccionadas */
 function addSkillsInfo(checkInputs) {
 
     let arrayCheckedInputs = checkInputs; //array con los elementos seleccionados
@@ -61,7 +65,7 @@ function addSkillsInfo(checkInputs) {
 
     for (let i = 0; i < arrayCheckedInputs.length; i++) {
 
-        arrayIds.push(document.getElementById(arrayCheckedInputs[i].id));  
+        arrayIds.push(document.getElementById(arrayCheckedInputs[i].id));
         arrayContenido.push(arrayIds[i].value);
     }
 
@@ -71,7 +75,7 @@ function addSkillsInfo(checkInputs) {
 /** Función que agrega a la tarjeta y al objeto JSON los skills seleccionados por el usuario */
 
 function addSkills(arrayContenido) {
-    
+
     //Añadimos la información a la tarjeta
     let allContent = '';
 
@@ -87,9 +91,9 @@ function addSkills(arrayContenido) {
     listCardContainer.innerHTML = allContent; //pintamos de una vez todos los li necesarios
 
     // Añadimos la información al JSON
-  
+
     objectJson.skills = arrayContenido;
-        
+
     console.log(objectJson);
 
 }

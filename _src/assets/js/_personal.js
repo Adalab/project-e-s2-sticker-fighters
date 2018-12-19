@@ -16,21 +16,23 @@ function fillCard(e) {
     const cardElement = document.querySelector('.' + classCardElement);
     console.log(cardElement);
 
-    if (classCardElement === 'title__name') { //
+    if (classCardElement === 'title__name') {
         fullNameCard.innerHTML = culpable.value;
         if (culpable.value === "") {
             fullNameCard.innerHTML = "Nombre Apellido";
         }
-        objectJson.name = fullName.value;
-        console.log(objectJson);
+          objectJson.name = fullName.value;
+          console.log(objectJson);
+
 
     } else if (classCardElement === 'title__profession') {
         positionCard.innerHTML = culpable.value;
         if (culpable.value === "") {
             positionCard.innerHTML = "Front-end developer";
-        }
-        objectJson.job = position.value;
-        console.log(objectJson);
+          }
+          objectJson.job = position.value;
+          console.log(objectJson);
+
     }
 }
 

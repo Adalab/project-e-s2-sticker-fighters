@@ -8,6 +8,7 @@
 }
 .design--section {
     padding-bottom: 21px;
+    // display: none;
 }
 .form--btn {
     display: flex;
@@ -20,6 +21,9 @@
     border: 0px;
     font-size: 18px;
     color: $gunmetal;
+    // overflow: hidden;
+
+
 }
 .form--btn_title > .far {
     color: $dull-orange;
@@ -62,7 +66,7 @@
     width: 17px;
     margin: 0px 10px 0px 0px;
     border-radius: 50px;
-    cursor: pointer;     
+    cursor: pointer;
     outline: none;
     box-shadow: inset 1px 1px 2px 1px rgba(68, 68, 68, .2);
 }
@@ -100,7 +104,7 @@
     background-color: $dark-green-blue;
 }
 .item_green_2 {
-    background-color: $dirty-blue; 
+    background-color: $dirty-blue;
 }
 .item_green_3 {
     background-color: $hospital-green;
@@ -109,7 +113,7 @@
     background-color: $dried-blood;
 }
 .item_red_2 {
-    background-color: $rusty-red; 
+    background-color: $rusty-red;
 }
 .item_red_3 {
     background-color: $tomato;
@@ -118,7 +122,7 @@
     background-color: $slate;
 }
 .item_blue_2 {
-    background-color: $pale-grey-two; 
+    background-color: $pale-grey-two;
 }
 .item_blue_3 {
     background-color: $light-grey-blue;
@@ -142,5 +146,15 @@
 .comic {
     width: 90px;
     font-family: 'Comic Sans MS', sans-serif;
-    font-size: 16px; 
+    font-size: 16px;
+}
+
+
+
+.collapsible--visible {
+  .section {
+    display: none;
+    overflow: hidden;
+    display: block;
+  }
 }

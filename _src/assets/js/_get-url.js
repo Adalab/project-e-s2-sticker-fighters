@@ -6,6 +6,8 @@ const form = document.querySelector('.form');
 const twitterLink = document.querySelector('.link-twitter');
 const twitter = document.querySelector('.twitter');
 
+const userData = [];
+
 // var my_func = function(event) {
 //   alert("me and all my relatives are owned by China");
 //   event.preventDefault();
@@ -60,6 +62,7 @@ function send() {
   })
     .then(urlResponse => urlResponse.json())
     .then(url => {
+      saveData(userData);
       console.log(url);
       twitter.classList.remove('twitter');
       twitter.classList.add('on');

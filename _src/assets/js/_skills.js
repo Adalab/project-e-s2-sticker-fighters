@@ -4,10 +4,15 @@
 const checkers = document.querySelector('.checkers');
 const urlApi = 'https://raw.githubusercontent.com/Adalab/dorcas-s2-proyecto-data/master/skills.json';
 
-
+const key = 'users data';
 const keyStorage = 'skills'; // definimos la key del localStorage
 
+const inputName = document.querySelector('#full_name');
+const job = document.querySelector('#position');
+
+
 setList(urlApi);
+setUserData(key);
 
 /**
  * Función que pinta una lista de skills desde el servidor o desde la caché
@@ -82,4 +87,39 @@ function getStorage(key) {
   return localStorage.getItem(key);
 
 }
+
+
+function saveData (array){
+
+  array.push(inputName.value);
+  array.push(job.value);
+  console.log('soy un array' + array);
+
+  localStorage.setItem('users data', JSON.stringify(array));
+}
+
+
+function setUserData(key) {
+
+  //compruebo si el array de datos existe y que no contenga "" (un valor falsy). Hay algo en el storage (si hay algo, getStorage me devuelve el valor de lo que haya; si no hay nada, getStorage me devuelve null). Si la comprobación que hiciera fuera getStorage(keyStorage) === null, lo que estaría comprobando es solo si skills existe o no (se tragaría el caso en el que skills = "")
+  if (getStorage(key)) { // hay info en el localStorage
+
+    //cogemos lo que hay en localStorage
+    const arrayDataUsersLocalStorage = JSON.parse(getStorage(key)); //lo que me devuelve el localStorage es un string
+
+    //lo pintamos
+inputName.value = arrayDataUsersLocalStorage[0];
+console.log('campo nombre', arrayDataUsersLocalStorage[0]);
+job.value = arrayDataUsersLocalStorage[1];
+
+
+  } else { //no hay nada en el localStorage
+    console.log('holaaaaa');
+    //LLamo al servidor y le pido la lista de skills
+
+
+  }
+
+}
+
 

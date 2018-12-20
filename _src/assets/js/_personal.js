@@ -7,6 +7,7 @@ const fullNameCard = document.querySelector('.title__name');
 const positionCard = document.querySelector('.title__profession');
 
 
+
 function fillCard(e) {
 
     const culpable = e.currentTarget;
@@ -22,8 +23,6 @@ function fillCard(e) {
             fullNameCard.innerHTML = "Nombre Apellido";
         }
           objectJson.name = fullName.value;
-          console.log(objectJson);
-
 
     } else if (classCardElement === 'title__profession') {
         positionCard.innerHTML = culpable.value;

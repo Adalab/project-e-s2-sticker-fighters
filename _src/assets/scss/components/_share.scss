@@ -24,8 +24,7 @@
     align-items: center;
 }
 .form--btn_title .fa-share-alt  {
-    font-size: 18px;
-    color: $dull-orange;
+    @include Text-Style;
 }
 .share-title {
     margin: 0 0 0 10px;

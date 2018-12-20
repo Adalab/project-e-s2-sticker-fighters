@@ -22,10 +22,10 @@ function setList(urlApi) {
 
     //lo pintamos
     paintList (checkers, arraySkills);
-    
+
   } else { //no hay nada en el localStorage
 
-    //LLamo al servidor y le pido la lista de skills 
+    //LLamo al servidor y le pido la lista de skills
 
     fetch(urlApi)
       .then(response => response.json())
@@ -53,7 +53,7 @@ function paintList(checkers, arraySkills) {
   let allContent = '';
 
   for (let i = 0; i < arraySkills.length; i++) {
-    let content = `        
+    let content = `
           <div class="fill--checkbox__item">
             <label for="skill-options${i}">
               <input class="fill--checkbox__input" id="skill-options${i}" type="checkbox" value="${arraySkills[i]}" name="skills">
@@ -66,7 +66,7 @@ function paintList(checkers, arraySkills) {
 }
 
 /**
- * Función que almacena en el localStorage 
+ * Función que almacena en el localStorage
  */
 
 function setStorage(key, value) {

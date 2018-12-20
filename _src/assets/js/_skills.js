@@ -9,6 +9,10 @@ const keyStorage = 'skills'; // definimos la key del localStorage
 
 const inputName = document.querySelector('#full_name');
 const job = document.querySelector('#position');
+const email = document.querySelector('#email');
+const tel = document.querySelector('#telNumber');
+const link = document.querySelector('#linkedin');
+const git = document.querySelector('#github');
 
 
 setList(urlApi);
@@ -89,10 +93,16 @@ function getStorage(key) {
 }
 
 
+
 function saveData (array){
 
   array.push(inputName.value);
   array.push(job.value);
+  array.push(email.value);
+  array.push(tel.value);
+  array.push(link.value);
+  array.push(git.value);
+
   console.log('soy un array' + array);
 
   localStorage.setItem('users data', JSON.stringify(array));
@@ -108,9 +118,15 @@ function setUserData(key) {
     const arrayDataUsersLocalStorage = JSON.parse(getStorage(key)); //lo que me devuelve el localStorage es un string
 
     //lo pintamos
-inputName.value = arrayDataUsersLocalStorage[0];
-console.log('campo nombre', arrayDataUsersLocalStorage[0]);
-job.value = arrayDataUsersLocalStorage[1];
+  
+
+      inputName.value = arrayDataUsersLocalStorage[0];
+      job.value = arrayDataUsersLocalStorage[1];
+      email.value = arrayDataUsersLocalStorage[2];
+      tel.value = arrayDataUsersLocalStorage[3];
+      link.value = arrayDataUsersLocalStorage[4];
+      git.value = arrayDataUsersLocalStorage[5];
+
 
 
   } else { //no hay nada en el localStorage

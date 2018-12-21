@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Creator - Sticker Fighters</title>
+        <link rel="icon" href="favicon.png"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+        rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet"
+        />
+        <link href="http://allfont.es/allfont.css?fonts=comic-sans-ms" rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Coming+Soon" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous" />
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    
+    <body>
+        <div class="page">
+            <div class="headerCreator_box">
+                <header class="headerCreator">
+                    <img class="header__image" src="assets/images/tarjetas-molonas.png" alt="">
+                </header>
+            </div>
+            <main class="main__parts">
+                <section class="cardSection">
+                    <div class="card">
+                        <div class="card__wrapper" id="card__wrapper">
+                            <div class="card__titles">
+                                 <h2 class="title__name">nombre apellido</h2>
+
+                                <p class="title__profession">front-end developer</p>
+                            </div>
+                            <div class="card__image">
+                                <img src="" alt="" class="image__photo">
+                                <!-- src="assets/images/cat.png" -->
+                            </div>
+                            <ul class="card__list card__contact-list">
+                                <li class="contact-list__element contact-list__phone">
+                                    <!-- <a class="element__link" href="" target="_blank">
+                        <i class="problematic_icon card_icon fas fa-mobile-alt"></i>
+                    </a> -->
+                                </li>
+                                <li class="contact-list__element contact-list__mail">
+                                    <!-- <a class="element__link" href="" target="_blank">
+                        <i class="problematic_icon card_icon fas fa-envelope"></i>
+                    </a> -->
+                                </li>
+                                <li class="contact-list__element contact-list__linkedin">
+                                    <!-- <a class="element__link" href="" target="_blank">
+                        <i class="card_icon fab fa-linkedin-in"></i>
+                    </a> -->
+                                </li>
+                                <li class="contact-list__element contact-list__github">
+                                    <!-- <a class="element__link" href="" target="_blank">
+                        <i class="card_icon fab fa-github-alt"></i>
+                    </a> -->
+                                </li>
+                            </ul>
+                            <ul class="card__list card__skills-list" id="ul-skills">
+                                <!-- <li class="skills-list__element">
+                    <p class="element__content">html</p>
+                </li>
+                <li class="skills-list__element">
+                    <p class="element__content">css</p>
+                </li>
+                <li class="skills-list__element">
+                    <p class="element__content">gulp</p>
+                </li> -->
+                            </ul>
+                            <button class="card__button" type="button"> <span class="button__icon">
+                    <i class="button_icon far fa-trash-alt"></i>
+                </span>
+ <span class="button__text">Reset</span>
+
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <form class="form" method="post">
+                    <div class="error__wrapper hidden">Campo de email obligatorio</div>
+                    <fieldset class="design">
+                        <div class="form--btn">
+                            <div class="form--btn_title"> <i class="far fa-object-ungroup"></i>
+
+                                 <h3 class="btn-desplegable">Diseña</h3>
+
+                            </div>
+                            <div class="form--btn_icon"> <i class="fas fa-chevron-down"></i>
+
+                            </div>
+                        </div>
+                        <div class="section design--section">
+                            <div class="design--colours">
+                                 <h4 class="design--colours_title">Colores</h4>
+
+                                <div class="design--colours_radio">
+                                    <div class="clase__green">
+                                        <label class="clase" for="green">
+                                            <input class="design_input" type="radio" name="colors" value="green" id="green"
+                                            checked>
+                                            <div class="design--colours_label">
+                                                <div class="label_item item_green_1"></div>
+                                                <div class="label_item item_green_2"></div>
+                                                <div class="label_item item_green_3"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="clase clase__red">
+                                        <input class="design_input" type="radio" name="colors" value="red" id="red">
+                                        <label for="red">
+                                            <div class="design--colours_label">
+                                                <div class="label_item item_red_1"></div>
+                                                <div class="label_item item_red_2"></div>
+                                                <div class="label_item item_red_3"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="clase clase__blue">
+                                        <input class="design_input" type="radio" name="colors" value="blue" id="blue">
+                                        <label for="blue">
+                                            <div class="design--colours_label">
+                                                <div class="label_item item_blue_1"></div>
+                                                <div class="label_item item_blue_2"></div>
+                                                <div class="label_item item_blue_3"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="design--fonts">
+                                 <h4 class="design--colours_title">Fuentes</h4>
+
+                                <div class="design--colours_radio">
+                                    <div class="fonts">
+                                        <input class="design_input design_input-font" type="radio" name="fonts"
+                                        id="ubuntu">
+                                        <label class="ubuntu" for="ubuntu">Ubuntu</label>
+                                    </div>
+                                    <div class="fonts">
+                                        <input class="design_input design_input-font" type="radio" name="fonts"
+                                        id="comic" checked>
+                                        <label class="comic" for="comic">Comic Soon</label>
+                                    </div>
+                                    <div class="fonts">
+                                        <input class="design_input design_input-font" type="radio" name="fonts"
+                                        id="montserrat">
+                                        <label class="montserrat" for="montserrat">Montserrat</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="fill--page">
+                        <div class="form--btn">
+                            <div class="form--btn_title"> <i class="far fa-keyboard"></i>
+
+                                 <h3 class="btn-desplegable">Rellena</h3>
+
+                            </div>
+                            <div class="form--btn_icon"> <i class="fas fa-chevron-down"></i>
+
+                            </div>
+                        </div>
+                        <div class="section fill--content">
+                            <div class="fill--form">
+                                <label class="fill--form_label" for="full_name">Nombre completo</label>
+                                <input class="fill--form_input" placeholder=" Ej: Sally Jill"
+                                id="full_name" type="text" name="full_name" data-vinculo="title__name"
+                                maxlength="20">
+                            </div>
+                            <div class="fill--form">
+                                <label class="fill--form_label" for="position">Puesto</label>
+                                <input class="fill--form_input" placeholder=" Ej: Front-end unicorn"
+                                id="position" type="text" name="position" data-vinculo="title__profession"
+                                maxlength="20">
+                            </div>
+                            <div class="fill--form__btn">
+                                <label class="fill--form_label" for="image">Imagen de perfil</label>
+                                <!-- BUSCAR MODO -->
+                                <div class="fill--wraper">
+                                    <button type="button" class="fill--btn">Añadir imagen</button>
+                                    <input class="search--btn" type="file" id="img-selector">
+                                    <div class="fill--input__img"></div>
+                                </div>
+                            </div>
+                            <div class="fill--form">
+                                <label class="fill--form_label" for="email">Email</label>
+                                <input class="fill--form_input" placeholder=" Ej: sally-hill@gmail.com"
+                                id="email" type="email" name="email">
+                            </div>
+                            <div class="fill--form">
+                                <label class="fill--form_label" for="telNumber">Teléfono</label>
+                                <input class="fill--form_input" placeholder=" Ej: 555-55-55-55"
+                                id="telNumber" type="tel" name="telNumber">
+                            </div>
+                            <div class="fill--form">
+                                <label class="fill--form_label" for="linkedin">Linkedin</label>
+                                <input class="fill--form_input" placeholder=" Ej: sally.hill"
+                                id="linkedin" type="text" name="linkedin">
+                            </div>
+                            <div class="fill--form">
+                                <label class="fill--form_label" for="github">Github</label>
+                                <input class="fill--form_input" placeholder=" Ej: sally-hill"
+                                id="github" type="text" name="github">
+                            </div>
+                            <!-- h3? -->
+                            <p class="fill--checkbox__text">Habilidades (máximo 3)</p>
+                            <div class="checkers"></div>
+                            <!-- <div class="fill--checkbox__item">
+            <label for="skill-options1">
+                <input class="fill--checkbox__input" id="skill-options1" type="checkbox" value="html" name="skills">
+                HTML
+            </label>
+        </div>
+        <div class="fill--checkbox__item">
+            <label for="skill-options2">
+                <input class="fill--checkbox__input" id="skill-options2" type="checkbox" value="css" name="skills">
+                CSS
+            </label>
+        </div>
+        <div class="fill--checkbox__item">
+            <label for="skill-options3">
+                <input class="fill--checkbox__input" id="skill-options3" type="checkbox" value="react" name="skills">
+                React
+            </label>
+        </div> --></div>
+                    </fieldset>
+                    <fieldset class="share">
+                        <div class="share__wrapper">
+                            <div class="form--btn">
+                                <div class="form--btn_title"> <i class="fas fa-share-alt"></i>
+
+                                     <h3 class="btn-desplegable">Comparte</h3>
+
+                                </div>
+                                <div class="form--btn_icon"> <i class="fas fa-chevron-down"></i>
+
+                                </div>
+                            </div>
+                            <div class="section btn-create-card">
+                                <button class="create-btn" type="button"> <i class="far fa-address-card"></i>
+
+                                     <h3 class="create-title">Crear tarjeta</h3>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="share__wrapper twitter">
+                            <div class="share-created">
+                                <p class="text-created">La tarjeta ha sido creada:</p>
+                                <div class="link-created"></div>
+                            </div> <a class="link-twitter" href="" target="_blank">
+      <button class="share-twitter" type="button">
+        <i class="fab fa-twitter"></i>
+        <span class="text-twitter">Compartir en Twitter</span>
+      </button>
+    </a>
+
+                        </div>
+                    </fieldset>
+                </form>
+            </main>
+            <footer>
+                <footer class="footer_box">
+                    <div class="footer_box-container">
+                        <div>
+                            <p class="footer_par">Awesome profile-cards @2018</p>
+                        </div>
+                        <div>
+                            <img class="footer_logo" src="assets/images/logo-adalab-80px.png" alt="">
+                        </div>
+                    </div>
+                </footer>
+            </footer>
+        </div>
+        <script type="text/javascript" src="assets/js/main.min.js"></script>
+    </body>
+
+</html>

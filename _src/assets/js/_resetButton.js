@@ -1,9 +1,8 @@
-'use strict';
-
 const resetButton = document.querySelector('.card__button');
 const colorRadio = document.querySelectorAll('.design_input');
 const fontRadio = document.querySelectorAll('.design_input-font');
 
+//Este let podría ser un const porque si va a "resetear" no debería cambiar.
 let clear= '';
 
 function colorReset() {

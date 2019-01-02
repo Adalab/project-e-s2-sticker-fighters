@@ -1,4 +1,3 @@
-'use strict';
 //los campos del formulario
 const fullName = document.querySelector('#full_name');
 const position = document.querySelector('#position');
@@ -10,11 +9,8 @@ const positionCard = document.querySelector('.title__profession');
 function fillCard(e) {
 
     const culpable = e.currentTarget;
-    console.log(culpable);
     const classCardElement = culpable.getAttribute('data-vinculo');
-    console.log(classCardElement);
     const cardElement = document.querySelector('.' + classCardElement);
-    console.log(cardElement);
 
     if (classCardElement === 'title__name') {
         fullNameCard.innerHTML = culpable.value;
@@ -22,8 +18,6 @@ function fillCard(e) {
             fullNameCard.innerHTML = "Nombre Apellido";
         }
           objectJson.name = fullName.value;
-          console.log(objectJson);
-
 
     } else if (classCardElement === 'title__profession') {
         positionCard.innerHTML = culpable.value;
@@ -31,10 +25,10 @@ function fillCard(e) {
             positionCard.innerHTML = "Front-end developer";
           }
           objectJson.job = position.value;
-          console.log(objectJson);
-
     }
 }
 
 fullName.addEventListener('keyup', fillCard);
 position.addEventListener('keyup', fillCard);
+
+//Por los momentos lo vemos bien, pero se podría refactorizar para simplificar el código.

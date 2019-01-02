@@ -1,6 +1,4 @@
-'use-strict';
 const fr = new FileReader();
-
 
 // Caso a partir de aquí :)
 const uploadBtn = document.querySelector('.fill--btn');
@@ -14,19 +12,17 @@ function getImage(e){
   fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
+
 function writeImage() {
   // profileImage.src= fr.result;
   profileImage.style.backgroundImage = `url(${fr.result})`;
   mini.style.backgroundImage = `url(${fr.result})`;
   objectJson.photo = fr.result;
-  console.log(objectJson);
-
 }
 
 function fakeFileClick() {
  fileField.click();
 }
-
 
 uploadBtn.addEventListener('click', fakeFileClick);
 fileField.addEventListener('change', getImage);

@@ -1,5 +1,6 @@
 'use strict';
 // Añadimos un listener para el evento click por cada input
+// REFACTOR: esto debería estar en una constante y seleccionar por clase, no por tipo
 document.querySelectorAll("input[type=checkbox]")
     .forEach(input => input.addEventListener('click', checkInputs));
 let checkedInputs; //array que se usa en la función checkInputs

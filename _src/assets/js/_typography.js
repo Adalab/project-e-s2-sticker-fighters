@@ -1,5 +1,3 @@
-'use strict';
-
 const cardWrapper = document.querySelector('#card__wrapper');
 const radioButtonSelectedUbuntu =  document.querySelector('#ubuntu');
 const radioButtonSelectedComic =  document.querySelector('#comic');
@@ -10,14 +8,11 @@ function changeTypo(e) {
     let idSelected = clickedElement.getAttribute('id');
 
     if (idSelected === 'ubuntu') {
-        console.log(idSelected);
-        console.log(idSelected);
         cardWrapper.classList.remove('card__typo-montserrat');
         cardWrapper.classList.add('card__typo-ubuntu');
         objectJson.typography = 1;
 
-    } else if ( idSelected === 'montserrat') {
-        console.log(idSelected);
+    } else if (idSelected === 'montserrat') {
         cardWrapper.classList.remove('card__typo-ubuntu');
         cardWrapper.classList.add('card__typo-montserrat');
         objectJson.typography = 3;

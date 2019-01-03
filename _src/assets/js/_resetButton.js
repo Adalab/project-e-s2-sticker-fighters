@@ -2,8 +2,8 @@ const resetButton = document.querySelector('.card__button');
 const colorRadio = document.querySelectorAll('.design_input');
 const fontRadio = document.querySelectorAll('.design_input-font');
 
-//Este let podría ser un const porque si va a "resetear" no debería cambiar.
-let clear= '';
+//Hemos cambiado let por const
+const clear= '';
 
 function colorReset() {
   card.classList.remove('card__theme-blue', 'card__theme-red');
@@ -38,8 +38,7 @@ function imageReset() {
 }
 
 function skillsReset() {
-console.log(checkers);
-const inputSkills = document.querySelectorAll('.fill--checkbox__input');
+  const inputSkills = document.querySelectorAll('.fill--checkbox__input');
   for(let i=0; i<inputSkills.length; i++){
 
     inputSkills[i].disabled = false;
@@ -59,4 +58,4 @@ function resetCard(){
 resetButton.addEventListener('click',resetCard);
 
 
-//no se resetea el monserrat
+//no se resetea el monserrat recordar orden de las clases!

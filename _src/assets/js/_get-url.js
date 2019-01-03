@@ -34,9 +34,10 @@ function validateEmail() {
 
 function send() {
  //validar el campo requerido de datos
+//  REFACTOR: cambiar nombres a inglés
   let valido = validateEmail();
   if(!valido){
-    // REFACTOR: no devuelve nada?
+    // REFACTOR: no devuelve nada el return?
     return;
   }
 

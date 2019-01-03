@@ -5,6 +5,7 @@ const collapContainer = document.querySelector('.section');
 
 // Función encargada de modificar el icono arrow de un desplegable
 function arrows(element){
+  // REFACTOR: no entendemos que se seleccionen todos los .fas, cuando con el querySelector se selecciona el primero solamente. También igual debería haber otra clase particular diferente, porque el fas es común a todos los iconos.
   const icon = element.querySelector('.fas');
   if(icon.classList.contains('fa-chevron-down')){
     element.innerHTML = `<i class="fas fa-chevron-up"></i>`;
@@ -17,7 +18,7 @@ function arrows(element){
 function closeAllCollapsibles() {
   for (const closeCollap of collapButtons) {
     closeCollap.parentElement.classList.remove('collapsible--visible');
-
+// REFACTOR: no entendemos por qué con querySelector seleccionar todos y no el primero solamente
     const iconArrow = closeCollap.querySelector('.form--btn_icon');
 
     iconArrow.innerHTML = `<i class="fas fa-chevron-down"></i>`;

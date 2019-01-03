@@ -1,5 +1,3 @@
-'use strict';
-
 const telOrigin = document.querySelector('#telNumber');
 const telDest = document.querySelector('.contact-list__phone');
 
@@ -22,7 +20,6 @@ function createTelLink(e) {
     telDest.innerHTML = '';
   }
   objectJson.phone = tel;
-  console.log(objectJson);
 }
 
 function createMailLink(e) {
@@ -37,7 +34,6 @@ function createMailLink(e) {
   }
   validateEmail();
   objectJson.email = mail;
-  console.log(objectJson.email);
 }
 
 function createLinkedinLink(e) {
@@ -51,7 +47,6 @@ function createLinkedinLink(e) {
     linkedinDest.innerHTML = '';
   }
   objectJson.linkedin = linkedin;
-  console.log(objectJson.linkedin);
 }
 
 function createGithubLink(e) {
@@ -65,7 +60,6 @@ function createGithubLink(e) {
     githubDest.innerHTML = '';
   }
   objectJson.github = github;
-  console.log(objectJson.github);
 }
 
 telOrigin.addEventListener('blur', createTelLink);

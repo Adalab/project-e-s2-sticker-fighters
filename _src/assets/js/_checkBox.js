@@ -1,4 +1,3 @@
-'use strict';
 // Añadimos un listener para el evento click por cada input
 const inputSelected = document.querySelectorAll('.fill--checkbox__input');
   inputSelected.forEach(input => input.addEventListener('click', checkInputs));
@@ -88,8 +87,5 @@ function addSkills(arrayContenido) {
   // Añadimos la información al JSON
 
   objectJson.skills = arrayContenido;
-
-  console.log(objectJson);
-
 }
 
